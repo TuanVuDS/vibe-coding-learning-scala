@@ -1,0 +1,6 @@
+17/17 numbered sections; local links resolve; lesson 53885 bytes
+Theory 3.2-3.11: 12 snippets, 5-15 lines each; every code line matches compiled lab/solutions source
+All section 9 output and section 10 runtime/compiler quotes match real logs
+Compiler: 3 baselines exit 0; 3 deliberate failures exit 1; -Wvalue-discard control exit 0
+Scala CLI: lab 22/22; solutions 12/12; 0 ignored; 0 compiler warnings
+Artifacts nonempty, UTF-8 readable; source/docs have no trailing whitespace (raw logs preserved)

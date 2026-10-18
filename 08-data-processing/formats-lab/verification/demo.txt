@@ -1,0 +1,8 @@
+Json roundTrip=true amountMinor=306
+JsonGzip roundTrip=true amountMinor=306
+Csv roundTrip=true amountMinor=306
+CsvGzip roundTrip=true amountMinor=306
+Avro roundTrip=true amountMinor=306
+AvroDeflate roundTrip=true amountMinor=306
+Parquet roundTrip=true amountMinor=306
+ParquetGzip roundTrip=true amountMinor=306

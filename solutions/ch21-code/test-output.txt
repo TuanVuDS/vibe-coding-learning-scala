@@ -1,0 +1,3 @@
+Test run vn.scalaeng.solutions.ch21.ExercisesSuite started
+vn.scalaeng.solutions.ch21.ExercisesSuite: finished 8.628s
+Test run vn.scalaeng.solutions.ch21.ExercisesSuite finished: 0 failed, 0 ignored, 12 total 8.639s

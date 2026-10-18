@@ -1,0 +1,7 @@
+{"event_id":"K1","customer_id":"C1","campaign":"SALE10","ts":"2026-10-15T00:30:00Z"}
+{"event_id":"K2","customer_id":"c1","campaign":" sale10 ","ts":"2026-10-15T00:40:00Z"}
+{"event_id":"K3","customer_id":"C2","campaign":"SALE10","ts":"2026-10-15T01:00:00Z"}
+{"event_id":"K3","customer_id":"C2","campaign":"SALE10","ts":"2026-10-15T01:00:00Z"}
+{"event_id":"K4","customer_id":"C3","campaign":"NEWBIE","ts":"2026-10-15T02:00:00Z"}
+{"event_id":"K5","customer_id":"C2","ts":"2026-10-15T03:00:00Z"}
+{"event_id":"K-broken","customer_id":

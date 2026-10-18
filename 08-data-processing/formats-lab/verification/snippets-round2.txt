@@ -1,0 +1,25 @@
+Scala 01: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/TextOrders.scala:36 (14 lines)
+Scala 02: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/AvroOrders.scala:39 (11 lines)
+Scala 03: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/ParquetOrders.scala:14 (12 lines)
+Scala 04: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/ParquetOrders.scala:27 (11 lines)
+Scala 05: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/Evolution.scala:51 (6 lines)
+Scala 06: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/ChapterExamples.scala:24 (7 lines)
+Scala 07: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/Order.scala:24 (12 lines)
+Scala 08: OK solutions/ch21-code/src/main/scala/vn/scalaeng/solutions/ch21/Exercises.scala:21 (12 lines)
+Scala 09: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/TextOrders.scala:58 (10 lines)
+Scala 10: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/TextOrders.scala:78 (13 lines)
+Scala 11: OK solutions/ch21-code/src/main/scala/vn/scalaeng/solutions/ch21/Exercises.scala:13 (7 lines)
+Scala 12: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/Order.scala:57 (5 lines)
+Scala 13: OK solutions/ch21-code/src/main/scala/vn/scalaeng/solutions/ch21/Exercises.scala:34 (12 lines)
+Scala 14: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/AvroOrders.scala:11 (10 lines)
+Scala 15: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/Order.scala:63 (6 lines)
+Scala 16: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/ParquetOrders.scala:42 (15 lines)
+Scala 17: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/ChapterExamples.scala:9 (14 lines)
+Scala 18: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/Benchmark.scala:50 (7 lines)
+Scala 19: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/Benchmark.scala:69 (7 lines)
+Scala 20: OK 08-data-processing/formats-lab/src/main/scala/vn/scalaeng/formats/Benchmark.scala:76 (17 lines)
+JSON: OK verification/schemas/v1.avsc
+JSON: OK verification/schemas/v2-default.avsc
+JSON: OK verification/schemas/v2-alias.avsc
+JSON: OK verification/schemas/v2-nullable.avsc
+PASS: 20 Scala excerpts; 4 runtime schemas; 17 sections

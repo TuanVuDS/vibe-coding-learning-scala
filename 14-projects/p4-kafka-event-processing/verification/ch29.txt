@@ -1,0 +1,6 @@
+COMMAND: C:\Users\VuTT\AppData\Local\Coursier\data\bin\scala-cli.bat test 10-streaming/streaming-pipeline-lab --server=false --suppress-outdated-dependency-warning --java-opt -Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t15-tmp
+Test run vn.scalaeng.pipeline.PipelineSuite started
+vn.scalaeng.pipeline.PipelineSuite: finished 8.355s
+Test run vn.scalaeng.pipeline.PipelineSuite finished: 0 failed, 0 ignored, 2 total 8.376s
+
+EXIT: 0

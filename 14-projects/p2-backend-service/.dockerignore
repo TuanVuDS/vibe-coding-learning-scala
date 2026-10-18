@@ -1,0 +1,7 @@
+**/target
+**/.scala-build
+**/.bsp
+.cache
+evidence
+.env
+*.log

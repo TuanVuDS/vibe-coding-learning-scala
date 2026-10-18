@@ -1,0 +1,13 @@
+COMMAND scala-cli.bat run 13-performance/cost-lab --server=false --suppress-outdated-dependency-warning --workspace C:\Users\VuTT\zero_to_hero_scala\.cache\t20\build-lab --java-opt=-Xms128m --java-opt=-Xmx512m --java-opt=-Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t20\tmp --java-opt=-Dfile.encoding=UTF-8 --main-class vn.scalaeng.cost.ModelDemo
+COST 0.001333333333333333333333333333333333
+COST_IDLE 0.003333333333333333333333333333333334
+CONCURRENCY 15
+PARTITIONS 800
+CACHE Some(3)
+MEMORY_SLOTS 4
+ERROR zero-throughput java.lang.IllegalArgumentException: requirement failed: throughput must be positive and finite
+ERROR empty-samples java.lang.IllegalArgumentException: requirement failed: samples must be finite, non-negative and non-empty
+ERROR zero-partition-target java.lang.IllegalArgumentException: requirement failed: bytes must be non-negative and target positive
+ERROR invalid-utilization java.lang.IllegalArgumentException: requirement failed: utilization must be in (0,1]
+
+EXIT 0

@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-17",
+  "round": 2,
+  "commands": [
+    "powershell.exe -NoProfile -ExecutionPolicy Bypass -File 11-data-platform/distributed-lab/verify.ps1 -Mode all",
+    "powershell.exe -NoProfile -ExecutionPolicy Bypass -File 11-data-platform/distributed-lab/verify.ps1 -Mode tests"
+  ],
+  "lastSuccessfulExecutions": [
+    {
+      "label": "lab-test",
+      "exitCode": 0,
+      "time": "2026-10-17T15:22:02.0711032+07:00"
+    },
+    {
+      "label": "solutions-test",
+      "exitCode": 0,
+      "time": "2026-10-17T15:23:19.7344589+07:00"
+    },
+    {
+      "label": "demo",
+      "exitCode": 0,
+      "time": "2026-10-17T15:18:59.7860404+07:00"
+    },
+    {
+      "label": "memory",
+      "exitCode": 0,
+      "time": "2026-10-17T15:19:28.4571975+07:00"
+    },
+    {
+      "label": "serializer-Java",
+      "exitCode": 0,
+      "time": "2026-10-17T15:19:55.5789441+07:00"
+    },
+    {
+      "label": "serializer-Kryo",
+      "exitCode": 0,
+      "time": "2026-10-17T15:20:24.0372464+07:00"
+    }
+  ],
+  "testSummaries": [
+    "Test run vn.scalaeng.distributed.DistributedSuite finished: 0 failed, 0 ignored, 11 total 27.308s",
+    "Test run vn.scalaeng.distributed.solutions.ExercisesSuite finished: 0 failed, 0 ignored, 7 total 19.044s"
+  ],
+  "compilerWarningMatches": [],
+  "sha256": {
+    "11-data-platform/ch32-advanced-distributed-processing.md": "3d63ba056dc69aa099948f6e1caeb6d5396cfdf7fc97c6467a5f4fb24c7246d0",
+    "11-data-platform/distributed-lab/src/main/scala/vn/scalaeng/distributed/DistributedDemo.scala": "de899d641c72c255fda9c294f982a71443dde25dcecbbca8422db7e007b983d5",
+    "11-data-platform/distributed-lab/src/main/scala/vn/scalaeng/distributed/DistributedLab.scala": "7bcc21f96f9ec8ade6ed522a8ac1f62c021fe29bd25718097c2a154c43dda32c",
+    "11-data-platform/distributed-lab/src/main/scala/vn/scalaeng/distributed/Measurement.scala": "92eabddce73c9757adf13b765c0d92b1203d05f94541a30bfc89ebfd4df8b504",
+    "11-data-platform/distributed-lab/src/test/scala/vn/scalaeng/distributed/DistributedSuite.scala": "24c1d52e760c709066edf0f0bee4de8128801f3f3158d0e5b879bd39fc8c1dea",
+    "solutions/ch32-code/src/main/scala/vn/scalaeng/distributed/solutions/Exercises.scala": "90f09b4818062ca4088404d1cac9085582bf9c8b3c99f484623d2de0be6d5bcd",
+    "solutions/ch32-code/src/test/scala/vn/scalaeng/distributed/solutions/ExercisesSuite.scala": "6ce914f5c59ed5e68aa128435de44bec5c15ca84a1bfafe6f8f518365d0da03c",
+    "11-data-platform/distributed-lab/evidence/distributed-demo.txt": "300bf8ed8d06f726de82564df747989c0ac3bd05b871a94973c9b02f79589fa1",
+    "11-data-platform/distributed-lab/evidence/lab-test.txt": "dc3ef8c747ec21e8554ae87af96aabfc186e4fda77fd8ec7e3706e004fe912ff",
+    "11-data-platform/distributed-lab/evidence/memory.txt": "170a731d32bba013156d55360645dc5647b16b3e6b7d6666d60a93be36e6b6e6",
+    "11-data-platform/distributed-lab/evidence/serializer-Java.txt": "494dc26f8da9a3efc5df3f949a0713369b7a6b73bd8ddb807510462f3b8e3303",
+    "11-data-platform/distributed-lab/evidence/serializer-Kryo.txt": "0a72fc510d8cec4a1a136c1c01f0caed743e5cd76c5a8e331bdfb8024d7673d3",
+    "11-data-platform/distributed-lab/evidence/solutions-test.txt": "1c95ec44baef9cc46dfe603f5d79fa45b10708a9c36372c222c0c40c3e7a77b7"
+  },
+  "documentAudit": {
+    "sections": 17,
+    "scalaSnippets": [
+      {
+        "section": "3.1",
+        "lines": 8
+      },
+      {
+        "section": "3.2",
+        "lines": 9
+      },
+      {
+        "section": "3.3",
+        "lines": 8
+      },
+      {
+        "section": "3.4",
+        "lines": 13
+      },
+      {
+        "section": "3.5",
+        "lines": 6
+      },
+      {
+        "section": "3.6",
+        "lines": 8
+      },
+      {
+        "section": "3.7",
+        "lines": 8
+      },
+      {
+        "section": "3.8",
+        "lines": 10
+      },
+      {
+        "section": "3.9",
+        "lines": 9
+      },
+      {
+        "section": "3.10",
+        "lines": 8
+      },
+      {
+        "section": "3.11",
+        "lines": 12
+      }
+    ],
+    "verbatimOutputLines": 44,
+    "localLinksChecked": 51,
+    "brokenLinks": [],
+    "utf8": "valid",
+    "testCounts": {
+      "passed": 18,
+      "failed": 0,
+      "ignored": 0
+    },
+    "compilerWarnings": 0
+  }
+}

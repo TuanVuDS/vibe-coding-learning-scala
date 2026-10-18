@@ -1,0 +1,35 @@
+UTC: 2026-10-16T16:49:27.981528+00:00
+Cwd: C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab
+Command: sbt.bat test
+Exit: 1
+
+Picked up JAVA_TOOL_OPTIONS: -Dsbt.boot.directory=C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab\.cache\sbt-boot -Dsbt.global.base=C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab\.cache\sbt-global -Dsbt.ivy.home=C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab\.cache\ivy -Dsbt.coursier.home=C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab\.cache\coursier -Dsbt.server.autostart=false -Dsbt.supershell=false
+Picked up JAVA_TOOL_OPTIONS: -Dsbt.boot.directory=C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab\.cache\sbt-boot -Dsbt.global.base=C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab\.cache\sbt-global -Dsbt.ivy.home=C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab\.cache\ivy -Dsbt.coursier.home=C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab\.cache\coursier -Dsbt.server.autostart=false -Dsbt.supershell=false
+java.nio.file.AccessDeniedException: C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:96)
+	at java.base/sun.nio.fs.WindowsLinkSupport.getRealPath(WindowsLinkSupport.java:288)
+	at java.base/sun.nio.fs.WindowsPath.toRealPath(WindowsPath.java:947)
+	at java.base/sun.nio.fs.WindowsPath.toRealPath(WindowsPath.java:42)
+	at sbt.internal.BootServerSocket.<init>(BootServerSocket.java:287)
+	at sbt.xMain$.getSocketOrExit(Main.scala:153)
+	at sbt.xMain$.bootServerSocket$lzycompute$1(Main.scala:79)
+	at sbt.xMain$.bootServerSocket$1(Main.scala:79)
+	at sbt.xMain$.withStreams$1(Main.scala:87)
+	at sbt.xMain$.run(Main.scala:124)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sbt.internal.XMainConfiguration.run(XMainConfiguration.java:59)
+	at sbt.xMain.run(Main.scala:48)
+	at xsbt.boot.Launch$.run$$anonfun$1(Launch.scala:132)
+	at xsbt.boot.Launch$.withContextLoader(Launch.scala:157)
+	at xsbt.boot.Launch$.run(Launch.scala:132)
+	at xsbt.boot.Launch$.apply$$anonfun$1(Launch.scala:43)
+	at xsbt.boot.Launch$.launch(Launch.scala:142)
+	at xsbt.boot.Launch$.apply(Launch.scala:43)
+	at xsbt.boot.Launch$.apply(Launch.scala:24)
+	at xsbt.boot.Boot$.runImpl(Boot.scala:73)
+	at xsbt.boot.Boot$.run(Boot.scala:69)
+	at xsbt.boot.Boot$.main(Boot.scala:23)
+	at xsbt.boot.Boot.main(Boot.scala)
+[error] [launcher] error during sbt launcher: java.nio.file.AccessDeniedException: C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab

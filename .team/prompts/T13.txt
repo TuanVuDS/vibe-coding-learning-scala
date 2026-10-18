@@ -1,0 +1,1 @@
+Bạn là Codex, co-author trong team với Claude Code. Đọc AGENTS.md rồi thực hiện ĐẦY ĐỦ brief .team/briefs/T13-ch27-28-streaming-kafka.md. Làm tự chủ đến khi đạt mọi tiêu chí xong, rồi viết handoff. Chỉ ghi trong phạm vi brief. Claude đang sửa 09-spark (Ch23, Ch24) và review Ch25 — không đụng vào. Không commit git.

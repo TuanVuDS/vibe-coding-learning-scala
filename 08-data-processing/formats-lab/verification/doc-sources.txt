@@ -1,0 +1,14 @@
+Checked: 2026-10-17T01:12:03.081288+07:00
+200 https://avro.apache.org/docs/1.12.0/api/java/org/apache/avro/Conversions.DecimalConversion.html -> https://avro.apache.org/docs/1.12.0/api/java/org/apache/avro/Conversions.DecimalConversion.html
+200 https://avro.apache.org/docs/1.12.0/getting-started-java/ -> https://avro.apache.org/docs/1.12.0/getting-started-java/
+200 https://avro.apache.org/docs/1.12.0/specification/ -> https://avro.apache.org/docs/1.12.0/specification/
+200 https://commons.apache.org/proper/commons-csv/apidocs/org/apache/commons/csv/CSVFormat.html -> https://commons.apache.org/proper/commons-csv/apidocs/org/apache/commons/csv/CSVFormat.html
+200 https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/math/BigDecimal.html -> https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/math/BigDecimal.html
+200 https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/package-summary.html -> https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/package-summary.html
+200 https://github.com/apache/parquet-java/tree/apache-parquet-1.18.1/parquet-avro/src/main/java/org/apache/parquet/avro -> https://github.com/apache/parquet-java/tree/apache-parquet-1.18.1/parquet-avro/src/main/java/org/apache/parquet/avro
+200 https://github.com/circe/circe/blob/v0.14.17/modules/core/shared/src/main/scala/io/circe/Decoder.scala -> https://github.com/circe/circe/blob/v0.14.17/modules/core/shared/src/main/scala/io/circe/Decoder.scala
+200 https://parquet.apache.org/docs/concepts/ -> https://parquet.apache.org/docs/concepts/
+200 https://parquet.apache.org/docs/file-format/ -> https://parquet.apache.org/docs/file-format/
+200 https://parquet.apache.org/docs/file-format/types/logicaltypes/ -> https://parquet.apache.org/docs/file-format/types/logicaltypes/
+200 https://www.rfc-editor.org/rfc/rfc4180 -> https://www.rfc-editor.org/info/rfc4180/
+200 https://www.rfc-editor.org/rfc/rfc8259 -> https://www.rfc-editor.org/info/rfc8259/

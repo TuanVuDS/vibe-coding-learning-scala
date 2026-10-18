@@ -1,0 +1,13 @@
+UTC: 2026-10-16T16:59:25.845363+00:00
+Cwd: C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab\.cache\compiler-examples\discarded-io
+Command: scala-cli.bat compile project.scala Example.scala --server=false --scalac-option -Wnonunit-statement
+Exit: 1
+
+-- [E176] Potential Issue Warning: C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab\.cache\compiler-examples\discarded-io\Example.scala:6:4 
+6 |    action
+  |    ^^^^^^
+  |unused value of type (vn.scalaeng.effects.DiscardedIO.action : => cats.effect.IO[Unit])
+No warnings can be incurred under -Werror
+1 warning found
+1 error found
+Compilation failed

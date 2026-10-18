@@ -1,0 +1,7 @@
+.cache/
+.scala-build/
+.bsp/
+target/
+.sbt-global/
+.sbt-boot/
+.ivy2/

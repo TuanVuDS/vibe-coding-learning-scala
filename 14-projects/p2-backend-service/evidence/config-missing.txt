@@ -1,0 +1,7 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+cấu hình không hợp lệ:
+- thiếu DB_URL
+- thiếu DB_USER
+- thiếu DB_PASSWORD
+- thiếu JWT_SECRET

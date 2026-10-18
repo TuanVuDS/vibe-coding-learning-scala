@@ -1,0 +1,9 @@
+COMMAND: C:\Users\VuTT\AppData\Local\Coursier\data\bin\scala-cli.bat test 10-streaming/streaming-lab --server=false --suppress-outdated-dependency-warning
+Test run vn.scalaeng.streaming.PressureSuite started
+vn.scalaeng.streaming.PressureSuite: finished 0.399s
+Test run vn.scalaeng.streaming.PressureSuite finished: 0 failed, 0 ignored, 1 total 0.405s
+Test run vn.scalaeng.streaming.StreamingSuite started
+vn.scalaeng.streaming.StreamingSuite: finished 0.033s
+Test run vn.scalaeng.streaming.StreamingSuite finished: 0 failed, 0 ignored, 9 total 0.033s
+
+EXIT: 0

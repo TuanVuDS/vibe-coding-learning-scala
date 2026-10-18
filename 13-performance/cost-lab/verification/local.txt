@@ -1,0 +1,28 @@
+COMMAND scala-cli.bat run 13-performance/cost-lab --server=false --suppress-outdated-dependency-warning --workspace C:\Users\VuTT\zero_to_hero_scala\.cache\t20\build-lab --java-opt=-Xms128m --java-opt=-Xmx512m --java-opt=-Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t20\tmp --java-opt=-Dfile.encoding=UTF-8 --main-class vn.scalaeng.cost.CostBench -- local C:\Users\VuTT\zero_to_hero_scala\13-performance\cost-lab\verification
+ENV java=21.0.12.1 vendor=Eclipse Adoptium scala=3.9.0 os=Windows 11 arch=amd64 cpu=12 physicalRamBytes=34188873728 heapMaxBytes=536870912
+JVM -Xms128m -Xmx512m -Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t20\tmp -Dfile.encoding=UTF-8 -Dscala.sources=C:/Users/VuTT/zero_to_hero_scala/13-performance/cost-lab/project.scala;C:/Users/VuTT/zero_to_hero_scala/13-performance/cost-lab/src/main/scala/vn/scalaeng/cost/CostBench.scala;C:/Users/VuTT/zero_to_hero_scala/13-performance/cost-lab/src/main/scala/vn/scalaeng/cost/Models.scala;C:/Users/VuTT/zero_to_hero_scala/13-performance/cost-lab/src/main/scala/vn/scalaeng/cost/Orders.scala;C:/Users/VuTT/zero_to_hero_scala/13-performance/cost-lab/src/main/scala/vn/scalaeng/cost/Probes.scala;C:/Users/VuTT/zero_to_hero_scala/13-performance/cost-lab/src/test/scala/vn/scalaeng/cost/CostSuite.scala -Dscala.source.names=project.scala;CostBench.scala;Models.scala;Orders.scala;Probes.scala;CostSuite.scala
+GC G1 Young Generation,G1 Concurrent GC,G1 Old Generation
+METHOD warmup=12 rounds=21 rotated-order=true timing=wall-clock percentiles=nearest-rank pricePerNodeHour=0.12-assumed no-sockets=true
+PAYLOAD events=12000 jsonBytes=1402760 avroBytes=845226 framing=jsonl-vs-count+raw-avro schemaOutsideAvro=true
+FIRST json-encode ms=42.081400 checksum=1402760
+FIRST avro-encode ms=30.143200 checksum=845226
+FIRST json-decode ms=94.947500 checksum=53194000
+FIRST avro-decode ms=102.149400 checksum=53194000
+BENCH json-encode rounds=21 p50Ms=18.584900 p95Ms=27.596300 p99Ms=30.419500 eventsPerSec=645685.475843 costPerMillion=0.00005162 mainAllocMedian=34548224 cpuMedianMs=15.625000 gcCount=10 gcMs=14
+BENCH avro-encode rounds=21 p50Ms=4.464100 p95Ms=7.528600 p99Ms=8.447900 eventsPerSec=2688111.825452 costPerMillion=0.00001240 mainAllocMedian=7435376 cpuMedianMs=0.000000 gcCount=0 gcMs=0
+BENCH json-decode rounds=21 p50Ms=17.415000 p95Ms=23.736000 p99Ms=36.906800 eventsPerSec=689061.154177 costPerMillion=0.00004838 mainAllocMedian=31510656 cpuMedianMs=15.625000 gcCount=6 gcMs=8
+BENCH avro-decode rounds=21 p50Ms=6.172200 p95Ms=9.513600 p99Ms=11.808000 eventsPerSec=1944201.419267 costPerMillion=0.00001715 mainAllocMedian=9515392 cpuMedianMs=0.000000 gcCount=0 gcMs=0
+FIRST filter-late ms=15.849900 checksum=-94954666026242113
+FIRST filter-early ms=2.943100 checksum=-94954666026242113
+BENCH filter-late rounds=21 p50Ms=11.807400 p95Ms=12.731500 p99Ms=12.949200 eventsPerSec=1016311.804462 costPerMillion=0.00003280 mainAllocMedian=291024 cpuMedianMs=15.625000 gcCount=0 gcMs=0
+BENCH filter-early rounds=21 p50Ms=0.495400 p95Ms=0.709500 p99Ms=0.955700 eventsPerSec=24222850.222043 costPerMillion=0.00000138 mainAllocMedian=291024 cpuMedianMs=0.000000 gcCount=0 gcMs=0
+FIRST cache-build ms=13.485300 checksum=-5122205163210847807
+FIRST cache-read ms=0.601000 checksum=-5408064185888296688
+FIRST no-cache ms=13.140500 checksum=-5408064185888296688
+BENCH cache-build rounds=21 p50Ms=11.880400 p95Ms=12.997900 p99Ms=13.230800 eventsPerSec=1010067.001111 costPerMillion=0.00003300 mainAllocMedian=439936 cpuMedianMs=15.625000 gcCount=1 gcMs=1
+BENCH cache-read rounds=21 p50Ms=0.119900 p95Ms=0.222300 p99Ms=0.250500 eventsPerSec=100083402.835696 costPerMillion=3.3E-7 mainAllocMedian=576024 cpuMedianMs=0.000000 gcCount=0 gcMs=0
+BENCH no-cache rounds=21 p50Ms=12.139000 p95Ms=12.620900 p99Ms=13.321800 eventsPerSec=988549.303897 costPerMillion=0.00003372 mainAllocMedian=576128 cpuMedianMs=15.625000 gcCount=0 gcMs=0
+CACHE payloadLongBytes=96000 expected=-5408064185888296688 sinkLength=12000
+SINK -5408064185888296688
+
+EXIT 0

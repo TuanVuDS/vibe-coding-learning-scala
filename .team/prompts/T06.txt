@@ -1,0 +1,1 @@
+Bạn là Codex, co-author trong team với Claude Code. Đọc AGENTS.md (đặc biệt mục 5) rồi thực hiện ĐẦY ĐỦ brief .team/briefs/T06-ch21-data-formats.md. Làm tự chủ đến khi đạt mọi tiêu chí xong, rồi viết handoff. Chỉ ghi trong phạm vi brief. Claude đang sửa các chương 13, 15, 17, 19 — không đụng vào.

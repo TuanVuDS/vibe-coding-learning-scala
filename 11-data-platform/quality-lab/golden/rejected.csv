@@ -1,0 +1,4 @@
+batch,order_id,sku,errors
+2026-10-15,O3,HP-01,quantity: số nguyên 1..1000
+2026-10-15,O5,,customer_id: bắt buộc | day: phải là ngày yyyy-MM-dd | status: phải là một trong PAID/REFUNDED/CANCELLED | sku: bắt buộc | unit_price_vnd: số nguyên dương | updated_at: phải là timestamp ISO-8601
+2026-10-16,O9,KB-01,quantity: số nguyên 1..1000

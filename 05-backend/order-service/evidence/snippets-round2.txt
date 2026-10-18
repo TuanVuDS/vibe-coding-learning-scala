@@ -1,0 +1,28 @@
+excerpt 1: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/Api.scala:36 (4 lines) OK
+excerpt 2: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/Api.scala:30 (5 lines) OK
+excerpt 3: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/Api.scala:41 (3 lines) OK
+excerpt 4: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/Api.scala:66 (12 lines) OK
+excerpt 5: 05-backend/order-service/domain/src/main/scala/vn/scalaeng/orders/Model.scala:60 (8 lines) OK
+excerpt 6: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/Api.scala:38 (2 lines) OK
+excerpt 7: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/Api.scala:46 (4 lines) OK
+excerpt 8: 05-backend/order-service/domain/src/main/scala/vn/scalaeng/orders/Model.scala:5 (5 lines) OK
+excerpt 9: 05-backend/order-service/domain/src/main/scala/vn/scalaeng/orders/Model.scala:18 (5 lines) OK
+excerpt 10: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/Transport.scala:33 (5 lines) OK
+excerpt 11: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/OrderRepository.scala:11 (8 lines) OK
+excerpt 12: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/OrderService.scala:6 (3 lines) OK
+excerpt 13: 05-backend/order-service/app/src/test/scala/vn/scalaeng/orders/RefRaceExampleSuite.scala:11 (10 lines) OK
+excerpt 14: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/OrderRepository.scala:64 (8 lines) OK
+excerpt 15: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/Api.scala:24 (5 lines) OK
+excerpt 16: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/Api.scala:79 (4 lines) OK
+excerpt 17: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/Api.scala:84 (8 lines) OK
+excerpt 18: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/Api.scala:92 (2 lines) OK
+excerpt 19: 05-backend/order-service/domain/src/main/scala/vn/scalaeng/orders/Model.scala:43 (2 lines) OK
+excerpt 20: 05-backend/order-service/domain/src/main/scala/vn/scalaeng/orders/Model.scala:76 (14 lines) OK
+excerpt 21: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/OrderRepository.scala:39 (9 lines) OK
+excerpt 22: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/OrderRepository.scala:25 (2 lines) OK
+excerpt 23: 05-backend/order-service/app/src/test/scala/vn/scalaeng/orders/ContractSuite.scala:24 (12 lines) OK
+excerpt 24: 05-backend/order-service/app/src/test/scala/vn/scalaeng/orders/SocketSuite.scala:12 (7 lines) OK
+excerpt 25: 05-backend/order-service/app/src/main/scala/vn/scalaeng/orders/OrderService.scala:16 (2 lines) OK
+25/25 Scala excerpts match source; 17 sections; local links OK
+05-backend/order-service/evidence/tests-round2.txt: 26 passed, 0 failed, 0 ignored; OK
+solutions/ch14-code/test-output-round2.txt: 6 passed, 0 failed, 0 ignored; OK

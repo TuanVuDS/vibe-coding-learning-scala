@@ -1,0 +1,5 @@
+day,segment,revenue_vnd,order_lines,orders
+2026-10-15,Retail,700000,2,2
+2026-10-15,UNKNOWN,450000,1,1
+2026-10-15,Wholesale,20000000,1,1
+2026-10-16,Wholesale,750000,1,1

@@ -1,0 +1,60 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+Test run vn.scalaeng.p2.app.BootstrapAdminSuite started
+==> s vn.scalaeng.p2.app.BootstrapAdminSuite.bootstrap lưu Admin và Argon2id; chạy lại không sửa account/hash skipped 0.066s
+==> s vn.scalaeng.p2.app.BootstrapAdminSuite.email Customer có sẵn không bao giờ được tự nâng quyền skipped 0.055s
+==> s vn.scalaeng.p2.app.BootstrapAdminSuite.promotion lỗi rollback cả registration; bỏ lỗi rồi chạy lại tạo được Admin skipped 0.003s
+==> s vn.scalaeng.p2.app.BootstrapAdminSuite.input không hợp lệ không ghi user skipped 0.004s
+vn.scalaeng.p2.app.BootstrapAdminSuite: finished 0.164s
+Test run vn.scalaeng.p2.app.BootstrapAdminSuite finished: 0 failed, 0 ignored, 4 total 0.186s
+Test run vn.scalaeng.p2.app.ConfigSuite started
+vn.scalaeng.p2.app.ConfigSuite: finished 0.008s
+Test run vn.scalaeng.p2.app.ConfigSuite finished: 0 failed, 0 ignored, 1 total 0.008s
+Test run vn.scalaeng.p2.app.PostgresHttpSuite started
+==> s vn.scalaeng.p2.app.PostgresHttpSuite.HTTP → service → PostgreSQL: auth, checkout, IDOR, admin, readiness và logout skipped 0.007s
+vn.scalaeng.p2.app.PostgresHttpSuite: finished 0.008s
+Test run vn.scalaeng.p2.app.PostgresHttpSuite finished: 0 failed, 0 ignored, 1 total 0.008s
+Test run vn.scalaeng.p2.db.PostgresSuite started
+==> s vn.scalaeng.p2.db.PostgresSuite.migration chạy lại bằng không; readiness select 1 skipped 0.003s
+==> s vn.scalaeng.p2.db.PostgresSuite.duplicate ON CONFLICT không abort transaction; unique không phân biệt hoa thường skipped 0.003s
+==> s vn.scalaeng.p2.db.PostgresSuite.checkout tổng tiền, chi tiết, kho cùng transaction skipped 0.0s
+==> s vn.scalaeng.p2.db.PostgresSuite.hai checkout đồng thời không oversell món cuối skipped 0.0s
+==> s vn.scalaeng.p2.db.PostgresSuite.lỗi sau insert order rollback cả order, items và kho skipped 0.012s
+==> s vn.scalaeng.p2.db.PostgresSuite.hủy đồng thời chỉ hoàn kho một lần; transition sai không ghi skipped 0.0s
+==> s vn.scalaeng.p2.db.PostgresSuite.GET owner/stranger không chờ row lock; updateStatus vẫn phải lấy lock skipped 0.0s
+==> s vn.scalaeng.p2.db.PostgresSuite.overflow và sản phẩm thiếu không để lại ghi dở skipped 0.0s
+==> s vn.scalaeng.p2.db.PostgresSuite.lọc/sort/phân trang ổn định, trang rỗng vẫn có total; injection là dữ liệu skipped 0.0s
+==> s vn.scalaeng.p2.db.PostgresSuite.xóa mềm không mất lịch sử giá trong order_items skipped 0.015s
+==> s vn.scalaeng.p2.db.PostgresSuite.revocation theo jti lưu bền; token hết hạn được dọn skipped 0.004s
+==> s vn.scalaeng.p2.db.PostgresSuite.authorization từ service chặn đọc và checkout chéo user skipped 0.001s
+==> s vn.scalaeng.p2.db.PostgresSuite.CHECK constraint là tuyến phòng thủ cuối skipped 0.0s
+vn.scalaeng.p2.db.PostgresSuite: finished 0.041s
+Test run vn.scalaeng.p2.db.PostgresSuite finished: 0 failed, 0 ignored, 13 total 0.041s
+Test run vn.scalaeng.p2.domain.CoreSuite started
+vn.scalaeng.p2.domain.CoreSuite: finished 0.036s
+Test run vn.scalaeng.p2.domain.CoreSuite finished: 0 failed, 0 ignored, 5 total 0.036s
+Test run vn.scalaeng.p2.http.ApiSuite started
+vn.scalaeng.p2.http.ApiSuite: finished 6.034s
+Test run vn.scalaeng.p2.http.ApiSuite finished: 0 failed, 0 ignored, 8 total 6.034s
+ERROR s.t.s.http4s.Http4sDefaultServerLog - Exception when handling request: GET /api/boom, by: GET /api/boom, took: 0ms
+java.lang.IllegalStateException: private-password
+	at vn.scalaeng.p2.http.OperationsSuite.$anonfun$4(OperationsSuite.scala:32)
+ERROR vn.scalaeng.p2.errors - request_id=7c09d5f4-648c-4998-bb7f-858f076ff7ea
+java.lang.IllegalStateException: private-password
+	at vn.scalaeng.p2.http.OperationsSuite.$anonfun$4(OperationsSuite.scala:32)
+Test run vn.scalaeng.p2.http.OperationsSuite started
+vn.scalaeng.p2.http.OperationsSuite: finished 1.034s
+Test run vn.scalaeng.p2.http.OperationsSuite finished: 0 failed, 0 ignored, 3 total 1.034s
+Test run vn.scalaeng.p2.security.CryptoSuite started
+vn.scalaeng.p2.security.CryptoSuite: finished 0.28s
+Test run vn.scalaeng.p2.security.CryptoSuite finished: 0 failed, 0 ignored, 4 total 0.28s
+Test run vn.scalaeng.p2.security.RateLimiterSuite started
+vn.scalaeng.p2.security.RateLimiterSuite: finished 0.032s
+Test run vn.scalaeng.p2.security.RateLimiterSuite finished: 0 failed, 0 ignored, 2 total 0.032s
+Test run vn.scalaeng.p2.service.ArchitectureSuite started
+vn.scalaeng.p2.service.ArchitectureSuite: finished 0.053s
+Test run vn.scalaeng.p2.service.ArchitectureSuite finished: 0 failed, 0 ignored, 1 total 0.053s
+Test run vn.scalaeng.p2.service.ResilienceSuite started
+vn.scalaeng.p2.service.ResilienceSuite: finished 0.038s
+Test run vn.scalaeng.p2.service.ResilienceSuite finished: 0 failed, 0 ignored, 5 total 0.038s

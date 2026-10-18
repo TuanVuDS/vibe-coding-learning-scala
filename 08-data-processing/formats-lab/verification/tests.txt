@@ -1,0 +1,3 @@
+Test run vn.scalaeng.formats.FormatsSuite started
+vn.scalaeng.formats.FormatsSuite: finished 9.319s
+Test run vn.scalaeng.formats.FormatsSuite finished: 0 failed, 0 ignored, 25 total 9.326s

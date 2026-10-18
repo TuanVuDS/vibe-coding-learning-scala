@@ -1,0 +1,209 @@
+{
+  "checkedAtUtc": "2026-10-16T16:36:20.044343+00:00",
+  "records": [
+    {
+      "url": "https://repo.maven.apache.org/maven2/org/typelevel/cats-effect_3/maven-metadata.xml",
+      "sha256": "1cbfe44ba65ac1473a9a46150f4148f57555f0e0ad548574637466b97b5da77f",
+      "release": "3.7.1",
+      "lastUpdated": "20260824004006",
+      "latestStable37": "3.7.1"
+    },
+    {
+      "url": "https://repo.maven.apache.org/maven2/org/typelevel/munit-cats-effect_3/maven-metadata.xml",
+      "sha256": "a09ce841e3d49eb739a8d4ecb3fae72bc32701e7aa1461655ede21dae4e24454",
+      "release": "2.2.1",
+      "lastUpdated": "20260919064255"
+    },
+    {
+      "url": "https://repo.maven.apache.org/maven2/dev/zio/zio_3/maven-metadata.xml",
+      "sha256": "bd63c652c05ce89c8bc3016c1591fece70bef7f8a8d40755211ea277e4c9f169",
+      "release": "2.1.27",
+      "lastUpdated": "20261013130916"
+    },
+    {
+      "url": "https://repo.maven.apache.org/maven2/org/typelevel/cats-effect_3/3.7.1/cats-effect_3-3.7.1.pom",
+      "sha256": "eeebb56ea43c9ec0f3a61e9b56ebf69bdbe160285799646c58d5d88a2897d0f9",
+      "dependencies": [
+        {
+          "groupId": "org.typelevel",
+          "artifactId": "cats-effect-kernel_3",
+          "version": "3.7.1",
+          "scope": null
+        },
+        {
+          "groupId": "org.typelevel",
+          "artifactId": "cats-effect-std_3",
+          "version": "3.7.1",
+          "scope": null
+        },
+        {
+          "groupId": "org.scala-lang",
+          "artifactId": "scala3-library_3",
+          "version": "3.3.4",
+          "scope": null
+        },
+        {
+          "groupId": "org.typelevel",
+          "artifactId": "scalac-compat-annotation_3",
+          "version": "0.1.4",
+          "scope": "provided"
+        },
+        {
+          "groupId": "org.typelevel",
+          "artifactId": "cats-mtl_3",
+          "version": "1.6.0",
+          "scope": null
+        }
+      ]
+    },
+    {
+      "url": "https://repo.maven.apache.org/maven2/org/typelevel/cats-effect-testkit_3/3.7.1/cats-effect-testkit_3-3.7.1.pom",
+      "sha256": "733e38fc73eb9cf680e798eb88498218790ff5df3a172e934cbf0639d9c38102",
+      "dependencies": [
+        {
+          "groupId": "org.typelevel",
+          "artifactId": "cats-effect_3",
+          "version": "3.7.1",
+          "scope": null
+        },
+        {
+          "groupId": "org.typelevel",
+          "artifactId": "cats-effect-kernel-testkit_3",
+          "version": "3.7.1",
+          "scope": null
+        },
+        {
+          "groupId": "org.scala-lang",
+          "artifactId": "scala3-library_3",
+          "version": "3.3.4",
+          "scope": null
+        },
+        {
+          "groupId": "org.typelevel",
+          "artifactId": "scalac-compat-annotation_3",
+          "version": "0.1.4",
+          "scope": "provided"
+        },
+        {
+          "groupId": "org.scalacheck",
+          "artifactId": "scalacheck_3",
+          "version": "1.19.0",
+          "scope": null
+        }
+      ]
+    },
+    {
+      "url": "https://repo.maven.apache.org/maven2/org/typelevel/munit-cats-effect_3/2.2.0/munit-cats-effect_3-2.2.0.pom",
+      "sha256": "1631c20e730c506547e77e5300cd7b55fa49bb0d9212b4c860be937d73c7204f",
+      "dependencies": [
+        {
+          "groupId": "org.scala-lang",
+          "artifactId": "scala3-library_3",
+          "version": "3.3.7",
+          "scope": null
+        },
+        {
+          "groupId": "org.typelevel",
+          "artifactId": "scalac-compat-annotation_3",
+          "version": "0.1.4",
+          "scope": "provided"
+        },
+        {
+          "groupId": "org.scalameta",
+          "artifactId": "munit_3",
+          "version": "1.2.4",
+          "scope": null
+        },
+        {
+          "groupId": "org.typelevel",
+          "artifactId": "cats-effect_3",
+          "version": "3.7.0",
+          "scope": null
+        }
+      ]
+    },
+    {
+      "url": "https://repo.maven.apache.org/maven2/org/typelevel/munit-cats-effect_3/2.2.1/munit-cats-effect_3-2.2.1.pom",
+      "sha256": "865a49d2874a7a39efb75b81111198946d2b02a9298ab024955054061d725bc7",
+      "dependencies": [
+        {
+          "groupId": "org.scala-lang",
+          "artifactId": "scala3-library_3",
+          "version": "3.3.8",
+          "scope": null
+        },
+        {
+          "groupId": "org.typelevel",
+          "artifactId": "scalac-compat-annotation_3",
+          "version": "0.1.4",
+          "scope": "provided"
+        },
+        {
+          "groupId": "org.scalameta",
+          "artifactId": "munit_3",
+          "version": "1.3.6",
+          "scope": null
+        },
+        {
+          "groupId": "org.typelevel",
+          "artifactId": "cats-effect_3",
+          "version": "3.7.1",
+          "scope": null
+        }
+      ]
+    },
+    {
+      "url": "https://repo.maven.apache.org/maven2/dev/zio/zio_3/2.1.27/zio_3-2.1.27.pom",
+      "sha256": "14eb94f1b2d70312650f3b326f5fdc459c25203ba802899f6ae2bc6702b234f1",
+      "dependencies": [
+        {
+          "groupId": "dev.zio",
+          "artifactId": "zio-internal-macros_3",
+          "version": "2.1.27",
+          "scope": null
+        },
+        {
+          "groupId": "dev.zio",
+          "artifactId": "zio-stacktracer_3",
+          "version": "2.1.27",
+          "scope": null
+        },
+        {
+          "groupId": "org.scala-lang",
+          "artifactId": "scala3-library_3",
+          "version": "3.3.8",
+          "scope": null
+        },
+        {
+          "groupId": "org.openjdk.jcstress",
+          "artifactId": "jcstress-core",
+          "version": "0.3",
+          "scope": "test"
+        },
+        {
+          "groupId": "net.sf.jopt-simple",
+          "artifactId": "jopt-simple",
+          "version": "4.6",
+          "scope": "test"
+        },
+        {
+          "groupId": "dev.zio",
+          "artifactId": "izumi-reflect_3",
+          "version": "3.0.11",
+          "scope": null
+        },
+        {
+          "groupId": "org.scala-lang.modules",
+          "artifactId": "scala-collection-compat_3",
+          "version": "2.14.0",
+          "scope": null
+        }
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/typelevel/cats-effect/v3.7.1/testkit/shared/src/main/scala/cats/effect/testkit/TestControl.scala",
+      "sha256": "2171fd3ccf6f94ca5a6391c678cac30477cdd2f74606a891bc60ee60281c871e",
+      "hasExecuteEmbed": true
+    }
+  ]
+}

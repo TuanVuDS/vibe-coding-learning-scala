@@ -1,0 +1,6 @@
+COMMAND: C:\Users\VuTT\AppData\Local\Coursier\data\bin\scala-cli.bat run 10-streaming/kafka-lab --main-class vn.scalaeng.kafka.ErrorDemo --server=false --suppress-outdated-dependency-warning
+org.apache.kafka.common.config.ConfigException: Must set acks to all in order to use the idempotent producer. Otherwise we cannot guarantee idempotence.
+java.lang.IllegalArgumentException: requirement failed: maxAttempts must be positive
+vn.scalaeng.kafka.Poison: event_id conflict: e1
+
+EXIT: 0

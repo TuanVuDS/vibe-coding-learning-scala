@@ -1,0 +1,3 @@
+{"event_id":"E1701","order_id":"O6","customer_id":"C2","day":"2026-10-16","status":"REFUNDED","sku":"MS-01","quantity":3,"unit_price_vnd":250000,"updated_at":"2026-10-17T05:00:00Z"}
+{"event_id":"E1702","order_id":"O10","customer_id":"C1","day":"2026-10-17","status":"PAID","sku":"HP-01","quantity":1,"unit_price_vnd":990000,"updated_at":"2026-10-17T06:00:00Z"}
+{"event_id":"E1703","order_id":"O11","customer_id":"C3","day":"2026-10-17","status":"PAID","sku":"KB-01","quantity":2,"unit_price_vnd":450000,"updated_at":"2026-10-17T07:00:00Z"}

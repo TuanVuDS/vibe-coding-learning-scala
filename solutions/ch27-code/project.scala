@@ -1,0 +1,8 @@
+//> using scala "3.9.0"
+//> using jvm "21"
+//> using options "-deprecation" "-feature" "-Wunused:all" "-Werror"
+//> using file "../../10-streaming/streaming-lab/src/main/scala"
+//> using dep "co.fs2::fs2-core:3.13.0"
+//> using dep "org.typelevel::cats-effect:3.7.1"
+//> using test.dep "org.scalameta::munit:1.2.4"
+//> using test.dep "org.typelevel::munit-cats-effect:2.2.0"

@@ -1,0 +1,16 @@
+{
+  "name": "orders",
+  "version": 2,
+  "owner": "team-checkout",
+  "fields": [
+    {"name": "order_id",       "type": "string"},
+    {"name": "customer_id",    "type": "string"},
+    {"name": "day",            "type": "date"},
+    {"name": "status",         "type": "enum", "values": ["PAID", "REFUNDED", "CANCELLED", "PARTIALLY_REFUNDED"]},
+    {"name": "sku",            "type": "string", "nullable": true},
+    {"name": "quantity",       "type": "long"},
+    {"name": "unit_price_vnd", "type": "long"},
+    {"name": "updated_at",     "type": "timestamp"},
+    {"name": "channel",        "type": "enum", "values": ["WEB", "APP"], "nullable": true}
+  ]
+}

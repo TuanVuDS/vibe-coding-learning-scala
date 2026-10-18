@@ -1,0 +1,4 @@
+campaign_id,campaign_name,day,impressions,clicks,unique_users,ctr_percent
+CMP-1,Khuyến mãi tháng 10,2026-10-15,2,2,2,100.00
+CMP-1,Khuyến mãi tháng 10,2026-10-16,1,0,1,0.00
+CMP-2,Ra mắt sản phẩm,2026-10-15,2,1,2,50.00

@@ -1,0 +1,30 @@
+-- [E008] Not Found Error: C:\Users\VuTT\zero_to_hero_scala\05-backend\order-service\app\src\test\scala\vn\scalaeng\orders\ContractSuite.scala:16:54 
+16 |    assertEquals(response.contentType.map(_.mediaType.renderString), Some("application/problem+json"))
+   |                                          ^^^^^^^^^^^^^^^^^^^^^^^^
+   |value renderString is not a member of org.http4s.MediaType, but could be made available as an extension method.
+   |
+   |The following import might fix the problem:
+   |
+   |  import org.http4s.headers.MediaRangeAndQValue.withDefaultQValue
+   |
+-- [E008] Not Found Error: C:\Users\VuTT\zero_to_hero_scala\05-backend\order-service\app\src\test\scala\vn\scalaeng\orders\ContractSuite.scala:131:52 
+131 |      assertEquals(docs.contentType.map(_.mediaType.renderString), Some("application/yaml"))
+    |                                        ^^^^^^^^^^^^^^^^^^^^^^^^
+    |value renderString is not a member of org.http4s.MediaType, but could be made available as an extension method.
+    |
+    |The following import might fix the problem:
+    |
+    |  import org.http4s.headers.MediaRangeAndQValue.withDefaultQValue
+    |
+2 errors found
+[hint] .\project.scala:14:20
+[hint] "munit is outdated, update to 1.3.6"
+[hint]      munit 1.2.4 -> org.scalameta::munit:1.3.6
+[hint] //> using test.dep org.scalameta::munit:1.2.4
+[hint]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[hint] .\project.scala:15:20
+[hint] "munit-cats-effect is outdated, update to 2.2.1"
+[hint]      munit-cats-effect 2.2.0 -> org.typelevel::munit-cats-effect:2.2.1
+[hint] //> using test.dep org.typelevel::munit-cats-effect:2.2.0
+[hint]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Compilation failed

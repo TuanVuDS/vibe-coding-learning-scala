@@ -1,0 +1,16 @@
+UTC: 2026-10-16T17:03:29.129706+00:00
+Cwd: C:\Users\VuTT\zero_to_hero_scala
+Command: scala-cli.bat run 07-concurrency/effects-lab --server=false --main-class vn.scalaeng.effects.EffectsDemo
+Exit: 0
+
+eager: Future before=1 after=1; IO before=0 after=2
+cancel: canceled=true writes=0 finalizer=true
+timeout: Future error=true before=0 after=1; IO error=true writes=0 finalizer=true
+retry: Future cached=1 fresh=3; IO=3
+resource: Future closedBeforeRead=true
+open connection -> open statement -> close statement -> close connection
+java.lang.IllegalStateException: query failed
+starvation: Future timedOut=true; blocking+compute=49; fiber join=42
+interruptible: interrupted=true
+quote: price=120000 stock=3 discount=0 payable=120000 requests=1
+pool: opened=3 closed=3 last=close pool

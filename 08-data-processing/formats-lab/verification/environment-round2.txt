@@ -1,0 +1,7 @@
+﻿checkedAt=2026-10-17T04:19:01.3153295+07:00
+HADOOP_HOME=<unset>
+winutils.exeOnPath=False
+JVM hadoop.home.dir: see examples-round2.txt (<unset>)
+Local Parquet UNCOMPRESSED/GZIP: see examples-round2.txt (roundTrip=true)
+Scala CLI lab: exit 0; 27 total; 0 failed; 0 ignored
+Scala CLI solutions: exit 0; 12 total; 0 failed; 0 ignored

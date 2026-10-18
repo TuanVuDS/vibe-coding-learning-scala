@@ -1,0 +1,31 @@
+[[33mhint[0m] .\project.scala:14:20
+[[33mhint[0m] "munit is outdated, update to 1.3.6"
+[[33mhint[0m]      munit 1.2.4 -> org.scalameta::munit:1.3.6
+[[33mhint[0m] //> using test.dep org.scalameta::munit:1.2.4
+[[33mhint[0m]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[[33mhint[0m] .\project.scala:15:20
+[[33mhint[0m] "munit-cats-effect is outdated, update to 2.2.1"
+[[33mhint[0m]      munit-cats-effect 2.2.0 -> org.typelevel::munit-cats-effect:2.2.1
+[[33mhint[0m] //> using test.dep org.typelevel::munit-cats-effect:2.2.0
+[[33mhint[0m]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SLF4J: Failed to load class "org.slf4j.impl.StaticMDCBinder".
+SLF4J: Defaulting to no-operation MDCAdapter implementation.
+SLF4J: See http://www.slf4j.org/codes.html#no_static_mdc_binder for further details.
+Test run vn.scalaeng.orders.ContractSuite started
+vn.scalaeng.orders.ContractSuite: finished 1.412s
+Test run vn.scalaeng.orders.ContractSuite finished: 0 failed, 0 ignored, 11 total 1.414s
+Test run vn.scalaeng.orders.DomainSuite started
+vn.scalaeng.orders.DomainSuite: finished 0.009s
+Test run vn.scalaeng.orders.DomainSuite finished: 0 failed, 0 ignored, 5 total 0.009s
+Test run vn.scalaeng.orders.OpenApiSuite started
+vn.scalaeng.orders.OpenApiSuite: finished 0.006s
+Test run vn.scalaeng.orders.OpenApiSuite finished: 0 failed, 0 ignored, 2 total 0.006s
+Test run vn.scalaeng.orders.RepositorySuite started
+vn.scalaeng.orders.RepositorySuite: finished 0.051s
+Test run vn.scalaeng.orders.RepositorySuite finished: 0 failed, 0 ignored, 6 total 0.051s
+Test run vn.scalaeng.orders.SocketSuite started
+vn.scalaeng.orders.SocketSuite: finished 0.718s
+Test run vn.scalaeng.orders.SocketSuite finished: 0 failed, 0 ignored, 1 total 0.718s

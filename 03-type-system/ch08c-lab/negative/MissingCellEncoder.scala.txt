@@ -1,0 +1,3 @@
+package vn.scalaeng.ch08c.negative
+import vn.scalaeng.ch08c.CsvEncoder
+case class Tagged(orderId: String, tags: List[String]) derives CsvEncoder

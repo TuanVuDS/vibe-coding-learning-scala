@@ -1,0 +1,28 @@
+UTC: 2026-10-16T16:59:12.048644+00:00
+Cwd: C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab\.cache\compiler-examples\missing-runtime
+Command: scala-cli.bat compile project.scala Example.scala --server=false
+Exit: 1
+
+-- [E172] Type Error: C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab\.cache\compiler-examples\missing-runtime\Example.scala:4:64 
+4 |  def run(): Unit = IO.println("order accepted").unsafeRunSync()
+  |                                                                ^
+  |Could not find an implicit IORuntime.
+  |
+  |Instead of calling unsafe methods directly, consider using cats.effect.IOApp, which
+  |runs your IO. If integrating with non-functional code or experimenting in a REPL / Worksheet,
+  |add the following import:
+  |
+  |import cats.effect.unsafe.implicits.global
+  |
+  |Alternatively, you can create an explicit IORuntime value and put it in implicit scope.
+  |This may be useful if you have a pre-existing fixed thread pool and/or scheduler which you
+  |wish to use to execute IO programs. Please be sure to review thread pool best practices to
+  |avoid unintentionally degrading your application performance.
+  |
+  |
+  |The following import might fix the problem:
+  |
+  |  import cats.effect.unsafe.implicits.global
+  |
+1 error found
+Compilation failed

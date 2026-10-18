@@ -1,0 +1,96 @@
+{
+  "verified_at_utc": "2026-10-17T08:34:33.309928+00:00",
+  "cpu_registry": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+  "sources": [
+    {
+      "url": "https://repo.maven.apache.org/maven2/org/scala-lang/scala3-compiler_3/3.9.0/scala3-compiler_3-3.9.0.pom",
+      "status": 200,
+      "file": "scala3-compiler_3-3.9.0.pom",
+      "sha256": "fecb28b80fecb35ed4fe2d8c35f9004a3c52c0f9e074a17bcc7776d5401c0b32"
+    },
+    {
+      "url": "https://repo.maven.apache.org/maven2/org/scalameta/munit_3/1.2.4/munit_3-1.2.4.pom",
+      "status": 200,
+      "file": "munit_3-1.2.4.pom",
+      "sha256": "19ee00eb3bfb6228f5addf1a8da3b4e963749fffc379afe0d77f95fb26780dd7"
+    },
+    {
+      "url": "https://repo.maven.apache.org/maven2/io/circe/circe-parser_3/0.14.17/circe-parser_3-0.14.17.pom",
+      "status": 200,
+      "file": "circe-parser_3-0.14.17.pom",
+      "sha256": "2bd3e8786006f2da5b6fe6b6e1d0f0b88d16335f36f21c2f386ecf3c1fd66324"
+    },
+    {
+      "url": "https://repo.maven.apache.org/maven2/org/apache/avro/avro/1.12.2/avro-1.12.2.pom",
+      "status": 200,
+      "file": "avro-1.12.2.pom",
+      "sha256": "58729d54b51d36ac5f41c2d7fdf9e8521e4cff330f7c5677aaa110d7915695b8"
+    },
+    {
+      "url": "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-nop/2.0.17/slf4j-nop-2.0.17.pom",
+      "status": 200,
+      "file": "slf4j-nop-2.0.17.pom",
+      "sha256": "e5e548dce8c1c979138a7e96ca354510fa0ce103f0a6df53a1f5b25e9298b9b2"
+    },
+    {
+      "url": "https://repo.maven.apache.org/maven2/org/scala-sbt/sbt/1.12.11/sbt-1.12.11.pom",
+      "status": 200,
+      "file": "sbt-1.12.11.pom",
+      "sha256": "0625a4b440daf4c75d716b1857d434940df8820dd7099b2d8b16521ac6f13092"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openjdk/jmh/master/jmh-samples/src/main/java/org/openjdk/jmh/samples/JMHSample_08_DeadCode.java",
+      "status": 200,
+      "bytes": 4087,
+      "sha256": "11f3ef2ed594689e920d5ff5cf49188f8210a2147c2b11ce0915fb83b1fc3eda"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openjdk/jmh/master/jmh-samples/src/main/java/org/openjdk/jmh/samples/JMHSample_12_Forking.java",
+      "status": 200,
+      "bytes": 5432,
+      "sha256": "8cd2be1c817f17d7db4ce70a5209d578ca80d064d0066c5ae81c8b5de71a07fa"
+    },
+    {
+      "url": "https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html",
+      "status": 200,
+      "bytes": 220837,
+      "sha256": "aaa8b202e1b10ae8071bd490b26d6a3a19de32caf9fcf5bdea6aa0fefc8f8698"
+    },
+    {
+      "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/MemoryMXBean.html",
+      "status": 200,
+      "bytes": 28538,
+      "sha256": "68e0dc72bbbbbd179742cdf28eb2298ae9ec83a50e47bbe9b979074e051c9dbb"
+    },
+    {
+      "url": "https://docs.oracle.com/en/java/javase/21/docs/api/jdk.management/com/sun/management/OperatingSystemMXBean.html",
+      "status": 200,
+      "bytes": 28842,
+      "sha256": "261770c0e4d8325acd41fa26ed0cda7fb99de61d30bdb8d930d83e399487a179"
+    },
+    {
+      "url": "https://avro.apache.org/docs/1.12.0/specification/",
+      "status": 200,
+      "bytes": 163426,
+      "sha256": "228954567d4bde1e2cbe5f6d81ee383ab4a7077fc8bd5686a78576fd81336f8c"
+    },
+    {
+      "url": "https://spark.apache.org/docs/4.2.0/sql-performance-tuning.html",
+      "status": 200,
+      "bytes": 56709,
+      "sha256": "00f835008d38fa7d248dd4ad26959789085b8d4032a0fa7c67f8cd04cd6c6f0e"
+    },
+    {
+      "url": "https://spark.apache.org/docs/4.2.0/monitoring.html",
+      "status": 200,
+      "bytes": 92438,
+      "sha256": "9f655b492c5ae33509e073d65faf049ad90bea56799e46837b18fc485e5bed57"
+    },
+    {
+      "url": "https://web.mit.edu/urban_or_book/www/book/chapter4/4.1.html",
+      "status": 200,
+      "bytes": 6931,
+      "sha256": "1e8082d6df0d491afdb0b3f6f0f2d9c159961f761f20c8283e5d103bc8b70b86"
+    }
+  ]
+}

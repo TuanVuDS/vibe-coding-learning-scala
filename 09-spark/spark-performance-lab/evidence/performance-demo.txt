@@ -1,0 +1,210 @@
+ENV os=Windows 11 arch=amd64 java=21.0.12.1 cpus=12 maxHeap=8547991552 master=local[2,3]
+LAZY before=0
+LAZY sum=10100 after=100
+JOIN broadcast rows=100000 ms=1108 tasks=12 failed=0 taskMedianMs=37 taskMaxMs=206 gcMs=42 memorySpill=0 diskSpill=0 shuffleRead=0 shuffleWrite=0
+AdaptiveSparkPlan isFinalPlan=true
++- == Final Plan ==
+   ResultQueryStage 1
+   +- *(2) Project [customer_id#8L, order_id#7L, 100 AS amount#9L, segment#12]
+      +- *(2) BroadcastHashJoin [customer_id#8L], [customer_id#11L], Inner, BuildRight, false, false
+         :- *(2) Project [id#6L AS order_id#7L, CASE WHEN ((id#6L % 10) < 9) THEN 0 ELSE ((id#6L % 100) + 1) END AS customer_id#8L]
+         :  +- *(2) Filter CASE WHEN ((id#6L % 10) < 9) THEN true ELSE isnotnull(((id#6L % 100) + 1)) END
+         :     +- *(2) Range (0, 100000, step=1, splits=8)
+         +- BroadcastQueryStage 0
+            +- BroadcastExchange HashedRelationBroadcastMode(List(input[0, bigint, false]),false), [plan_id=69]
+               +- *(1) Project [id#10L AS customer_id#11L, concat(S, cast((id#10L % 3) as string)) AS segment#12]
+                  +- *(1) Range (0, 101, step=1, splits=4)
++- == Initial Plan ==
+   Project [customer_id#8L, order_id#7L, 100 AS amount#9L, segment#12]
+   +- BroadcastHashJoin [customer_id#8L], [customer_id#11L], Inner, BuildRight, false, false
+      :- Project [id#6L AS order_id#7L, CASE WHEN ((id#6L % 10) < 9) THEN 0 ELSE ((id#6L % 100) + 1) END AS customer_id#8L]
+      :  +- Filter CASE WHEN ((id#6L % 10) < 9) THEN true ELSE isnotnull(((id#6L % 100) + 1)) END
+      :     +- Range (0, 100000, step=1, splits=8)
+      +- BroadcastExchange HashedRelationBroadcastMode(List(input[0, bigint, false]),false), [plan_id=61]
+         +- Project [id#10L AS customer_id#11L, concat(S, cast((id#10L % 3) as string)) AS segment#12]
+            +- Range (0, 101, step=1, splits=4)
+
+JOIN merge rows=100000 ms=2033 tasks=13 failed=0 taskMedianMs=113 taskMaxMs=722 gcMs=80 memorySpill=0 diskSpill=0 shuffleRead=550845 shuffleWrite=550845
+AdaptiveSparkPlan isFinalPlan=true
++- == Final Plan ==
+   ResultQueryStage 2
+   +- *(5) Project [customer_id#24L, order_id#23L, 100 AS amount#25L, segment#28]
+      +- *(5) SortMergeJoin [customer_id#24L], [customer_id#27L], Inner
+         :- *(3) Sort [customer_id#24L ASC NULLS FIRST], false, 0
+         :  +- AQEShuffleRead coalesced
+         :     +- ShuffleQueryStage 0
+         :        +- Exchange hashpartitioning(customer_id#24L, 8), ENSURE_REQUIREMENTS, [plan_id=139]
+         :           +- *(1) Project [id#22L AS order_id#23L, CASE WHEN ((id#22L % 10) < 9) THEN 0 ELSE ((id#22L % 100) + 1) END AS customer_id#24L]
+         :              +- *(1) Filter CASE WHEN ((id#22L % 10) < 9) THEN true ELSE isnotnull(((id#22L % 100) + 1)) END
+         :                 +- *(1) Range (0, 100000, step=1, splits=8)
+         +- *(4) Sort [customer_id#27L ASC NULLS FIRST], false, 0
+            +- AQEShuffleRead coalesced
+               +- ShuffleQueryStage 1
+                  +- Exchange hashpartitioning(customer_id#27L, 8), ENSURE_REQUIREMENTS, [plan_id=151]
+                     +- *(2) Project [id#26L AS customer_id#27L, concat(S, cast((id#26L % 3) as string)) AS segment#28]
+                        +- *(2) Range (0, 101, step=1, splits=4)
++- == Initial Plan ==
+   Project [customer_id#24L, order_id#23L, 100 AS amount#25L, segment#28]
+   +- SortMergeJoin [customer_id#24L], [customer_id#27L], Inner
+      :- Sort [customer_id#24L ASC NULLS FIRST], false, 0
+      :  +- Exchange hashpartitioning(customer_id#24L, 8), ENSURE_REQUIREMENTS, [plan_id=125]
+      :     +- Project [id#22L AS order_id#23L, CASE WHEN ((id#22L % 10) < 9) THEN 0 ELSE ((id#22L % 100) + 1) END AS customer_id#24L]
+      :        +- Filter CASE WHEN ((id#22L % 10) < 9) THEN true ELSE isnotnull(((id#22L % 100) + 1)) END
+      :           +- Range (0, 100000, step=1, splits=8)
+      +- Sort [customer_id#27L ASC NULLS FIRST], false, 0
+         +- Exchange hashpartitioning(customer_id#27L, 8), ENSURE_REQUIREMENTS, [plan_id=126]
+            +- Project [id#26L AS customer_id#27L, concat(S, cast((id#26L % 3) as string)) AS segment#28]
+               +- Range (0, 101, step=1, splits=4)
+
+JOIN shuffle_hash rows=100000 ms=696 tasks=13 failed=0 taskMedianMs=52 taskMaxMs=205 gcMs=12 memorySpill=0 diskSpill=0 shuffleRead=550845 shuffleWrite=550845
+AdaptiveSparkPlan isFinalPlan=true
++- == Final Plan ==
+   ResultQueryStage 2
+   +- *(3) Project [customer_id#40L, order_id#39L, 100 AS amount#41L, segment#44]
+      +- *(3) ShuffledHashJoin [customer_id#40L], [customer_id#43L], Inner, BuildRight
+         :- AQEShuffleRead coalesced
+         :  +- ShuffleQueryStage 0
+         :     +- Exchange hashpartitioning(customer_id#40L, 8), ENSURE_REQUIREMENTS, [plan_id=246]
+         :        +- *(1) Project [id#38L AS order_id#39L, CASE WHEN ((id#38L % 10) < 9) THEN 0 ELSE ((id#38L % 100) + 1) END AS customer_id#40L]
+         :           +- *(1) Filter CASE WHEN ((id#38L % 10) < 9) THEN true ELSE isnotnull(((id#38L % 100) + 1)) END
+         :              +- *(1) Range (0, 100000, step=1, splits=8)
+         +- AQEShuffleRead coalesced
+            +- ShuffleQueryStage 1
+               +- Exchange hashpartitioning(customer_id#43L, 8), ENSURE_REQUIREMENTS, [plan_id=257]
+                  +- *(2) Project [id#42L AS customer_id#43L, concat(S, cast((id#42L % 3) as string)) AS segment#44]
+                     +- *(2) Range (0, 101, step=1, splits=4)
++- == Initial Plan ==
+   Project [customer_id#40L, order_id#39L, 100 AS amount#41L, segment#44]
+   +- ShuffledHashJoin [customer_id#40L], [customer_id#43L], Inner, BuildRight
+      :- Exchange hashpartitioning(customer_id#40L, 8), ENSURE_REQUIREMENTS, [plan_id=234]
+      :  +- Project [id#38L AS order_id#39L, CASE WHEN ((id#38L % 10) < 9) THEN 0 ELSE ((id#38L % 100) + 1) END AS customer_id#40L]
+      :     +- Filter CASE WHEN ((id#38L % 10) < 9) THEN true ELSE isnotnull(((id#38L % 100) + 1)) END
+      :        +- Range (0, 100000, step=1, splits=8)
+      +- Exchange hashpartitioning(customer_id#43L, 8), ENSURE_REQUIREMENTS, [plan_id=235]
+         +- Project [id#42L AS customer_id#43L, concat(S, cast((id#42L % 3) as string)) AS segment#44]
+            +- Range (0, 101, step=1, splits=4)
+
+PARTITIONS initial=200 aqe=false resultPartitions=200 ms=1882 tasks=208 failed=0 taskMedianMs=11 taskMaxMs=345 gcMs=68 memorySpill=0 diskSpill=0 shuffleRead=5112 shuffleWrite=5112
+*(2) HashAggregate(keys=[customer_id#56L], functions=[count(1)], output=[customer_id#56L, count#58L])
++- Exchange hashpartitioning(customer_id#56L, 200), ENSURE_REQUIREMENTS, [plan_id=311]
+   +- *(1) HashAggregate(keys=[customer_id#56L], functions=[partial_count(1)], output=[customer_id#56L, count#64L])
+      +- *(1) Project [CASE WHEN ((id#54L % 10) < 9) THEN 0 ELSE ((id#54L % 100) + 1) END AS customer_id#56L]
+         +- *(1) Range (0, 100000, step=1, splits=8)
+
+PARTITIONS initial=8 aqe=false resultPartitions=8 ms=380 tasks=16 failed=0 taskMedianMs=33 taskMaxMs=136 gcMs=32 memorySpill=0 diskSpill=0 shuffleRead=3504 shuffleWrite=3504
+*(2) HashAggregate(keys=[customer_id#77L], functions=[count(1)], output=[customer_id#77L, count#79L])
++- Exchange hashpartitioning(customer_id#77L, 8), ENSURE_REQUIREMENTS, [plan_id=375]
+   +- *(1) HashAggregate(keys=[customer_id#77L], functions=[partial_count(1)], output=[customer_id#77L, count#85L])
+      +- *(1) Project [CASE WHEN ((id#75L % 10) < 9) THEN 0 ELSE ((id#75L % 100) + 1) END AS customer_id#77L]
+         +- *(1) Range (0, 100000, step=1, splits=8)
+
+PARTITIONS initial=200 aqe=true resultPartitions=1 ms=401 tasks=9 failed=0 taskMedianMs=59 taskMaxMs=96 gcMs=18 memorySpill=0 diskSpill=0 shuffleRead=5112 shuffleWrite=5112
+AdaptiveSparkPlan isFinalPlan=true
++- == Final Plan ==
+   ResultQueryStage 1
+   +- *(2) HashAggregate(keys=[customer_id#98L], functions=[count(1)], output=[customer_id#98L, count#100L])
+      +- AQEShuffleRead coalesced
+         +- ShuffleQueryStage 0
+            +- Exchange hashpartitioning(customer_id#98L, 200), ENSURE_REQUIREMENTS, [plan_id=447]
+               +- *(1) HashAggregate(keys=[customer_id#98L], functions=[partial_count(1)], output=[customer_id#98L, count#106L])
+                  +- *(1) Project [CASE WHEN ((id#96L % 10) < 9) THEN 0 ELSE ((id#96L % 100) + 1) END AS customer_id#98L]
+                     +- *(1) Range (0, 100000, step=1, splits=8)
++- == Initial Plan ==
+   HashAggregate(keys=[customer_id#98L], functions=[count(1)], output=[customer_id#98L, count#100L])
+   +- Exchange hashpartitioning(customer_id#98L, 200), ENSURE_REQUIREMENTS, [plan_id=437]
+      +- HashAggregate(keys=[customer_id#98L], functions=[partial_count(1)], output=[customer_id#98L, count#106L])
+         +- Project [CASE WHEN ((id#96L % 10) < 9) THEN 0 ELSE ((id#96L % 100) + 1) END AS customer_id#98L]
+            +- Range (0, 100000, step=1, splits=8)
+
+SKEW hash=1000,2000,2000,0,0,92000,1000,2000
+SKEW salted=1508,1229,881,12067,1263,24899,35174,22979
+SKEWJOIN aqe=false rows=100000 ms=701 tasks=20 failed=0 taskMedianMs=37 taskMaxMs=192 gcMs=52 memorySpill=0 diskSpill=0 shuffleRead=550845 shuffleWrite=550845
+SKEWSTAGES stage=34 tasks=4 medianMs=113 maxMs=117; stage=35 tasks=8 medianMs=37 maxMs=44; stage=36 tasks=8 medianMs=40 maxMs=192
+*(5) Project [customer_id#147L, order_id#146L, 100 AS amount#148L, segment#151]
++- *(5) SortMergeJoin [customer_id#147L], [customer_id#150L], Inner
+   :- *(2) Sort [customer_id#147L ASC NULLS FIRST], false, 0
+   :  +- Exchange hashpartitioning(customer_id#147L, 8), ENSURE_REQUIREMENTS, [plan_id=592]
+   :     +- *(1) Project [id#145L AS order_id#146L, CASE WHEN ((id#145L % 10) < 9) THEN 0 ELSE ((id#145L % 100) + 1) END AS customer_id#147L]
+   :        +- *(1) Filter CASE WHEN ((id#145L % 10) < 9) THEN true ELSE isnotnull(((id#145L % 100) + 1)) END
+   :           +- *(1) Range (0, 100000, step=1, splits=8)
+   +- *(4) Sort [customer_id#150L ASC NULLS FIRST], false, 0
+      +- Exchange hashpartitioning(customer_id#150L, 8), ENSURE_REQUIREMENTS, [plan_id=598]
+         +- *(3) Project [id#149L AS customer_id#150L, concat(S, cast((id#149L % 3) as string)) AS segment#151]
+            +- *(3) Range (0, 101, step=1, splits=4)
+
+SKEWJOIN salted rows=100000 ms=891 tasks=20 failed=0 taskMedianMs=72 taskMaxMs=163 gcMs=0 memorySpill=0 diskSpill=0 shuffleRead=748129 shuffleWrite=748129
+SALTSTAGES stage=38 tasks=4 medianMs=103 maxMs=116; stage=39 tasks=8 medianMs=77 maxMs=163; stage=40 tasks=8 medianMs=59 maxMs=120
+SKEWJOIN aqe=true rows=100000 ms=473 tasks=27 failed=0 taskMedianMs=29 taskMaxMs=94 gcMs=3 memorySpill=0 diskSpill=0 shuffleRead=553099 shuffleWrite=550845
+SKEWSTAGES stage=42 tasks=4 medianMs=39 maxMs=41; stage=43 tasks=8 medianMs=35 maxMs=45; stage=46 tasks=15 medianMs=18 maxMs=94
+AdaptiveSparkPlan isFinalPlan=true
++- == Final Plan ==
+   ResultQueryStage 2
+   +- *(5) Project [customer_id#182L, order_id#181L, 100 AS amount#183L, segment#186]
+      +- *(5) SortMergeJoin(skew=true) [customer_id#182L], [customer_id#185L], Inner
+         :- *(3) Sort [customer_id#182L ASC NULLS FIRST], false, 0
+         :  +- AQEShuffleRead skewed
+         :     +- ShuffleQueryStage 0
+         :        +- Exchange hashpartitioning(customer_id#182L, 8), ENSURE_REQUIREMENTS, [plan_id=732]
+         :           +- *(1) Project [id#180L AS order_id#181L, CASE WHEN ((id#180L % 10) < 9) THEN 0 ELSE ((id#180L % 100) + 1) END AS customer_id#182L]
+         :              +- *(1) Filter CASE WHEN ((id#180L % 10) < 9) THEN true ELSE isnotnull(((id#180L % 100) + 1)) END
+         :                 +- *(1) Range (0, 100000, step=1, splits=8)
+         +- *(4) Sort [customer_id#185L ASC NULLS FIRST], false, 0
+            +- AQEShuffleRead
+               +- ShuffleQueryStage 1
+                  +- Exchange hashpartitioning(customer_id#185L, 8), ENSURE_REQUIREMENTS, [plan_id=744]
+                     +- *(2) Project [id#184L AS customer_id#185L, concat(S, cast((id#184L % 3) as string)) AS segment#186]
+                        +- *(2) Range (0, 101, step=1, splits=4)
++- == Initial Plan ==
+   Project [customer_id#182L, order_id#181L, 100 AS amount#183L, segment#186]
+   +- SortMergeJoin [customer_id#182L], [customer_id#185L], Inner
+      :- Sort [customer_id#182L ASC NULLS FIRST], false, 0
+      :  +- Exchange hashpartitioning(customer_id#182L, 8), ENSURE_REQUIREMENTS, [plan_id=718]
+      :     +- Project [id#180L AS order_id#181L, CASE WHEN ((id#180L % 10) < 9) THEN 0 ELSE ((id#180L % 100) + 1) END AS customer_id#182L]
+      :        +- Filter CASE WHEN ((id#180L % 10) < 9) THEN true ELSE isnotnull(((id#180L % 100) + 1)) END
+      :           +- Range (0, 100000, step=1, splits=8)
+      +- Sort [customer_id#185L ASC NULLS FIRST], false, 0
+         +- Exchange hashpartitioning(customer_id#185L, 8), ENSURE_REQUIREMENTS, [plan_id=719]
+            +- Project [id#184L AS customer_id#185L, concat(S, cast((id#184L % 3) as string)) AS segment#186]
+               +- Range (0, 101, step=1, splits=4)
+
+CACHE uses=1 cached=false total=12800000 ms=582 tasks=9 failed=0 taskMedianMs=67 taskMaxMs=218 gcMs=19 memorySpill=0 diskSpill=0 shuffleRead=464 shuffleWrite=464
+CACHE uses=1 cached=true total=12800000 ms=1477 tasks=17 failed=0 taskMedianMs=111 taskMaxMs=514 gcMs=48 memorySpill=0 diskSpill=0 shuffleRead=464 shuffleWrite=464
+CACHE uses=2 cached=false total=25600000 ms=609 tasks=18 failed=0 taskMedianMs=43 taskMaxMs=75 gcMs=42 memorySpill=0 diskSpill=0 shuffleRead=928 shuffleWrite=928
+CACHE uses=2 cached=true total=25600000 ms=772 tasks=26 failed=0 taskMedianMs=31 taskMaxMs=95 gcMs=62 memorySpill=0 diskSpill=0 shuffleRead=928 shuffleWrite=928
+CACHE storage=StorageLevel(disk, memory, deserialized, 1 replicas)
+FILES partitions=8 parquet=8
+FILES partitions=2 parquet=2
+SERIALIZE javaBytes=27156 kryoBytes=20004
+FILTER builtin rows=100 ms=417 tasks=2 failed=0 taskMedianMs=278 taskMaxMs=278 gcMs=18 memorySpill=0 diskSpill=0 shuffleRead=0 shuffleWrite=0
+*(1) Filter (isnotnull(order_id#652L) AND (order_id#652L < 100))
++- *(1) ColumnarToRow
+   +- FileScan parquet [order_id#652L,customer_id#653L,amount#654L] Batched: true, DataFilters: [isnotnull(order_id#652L), (order_id#652L < 100)], Format: Parquet, Location: InMemoryFileIndex(1 paths)[file:/C:/Users/VuTT/zero_to_hero_scala/.cache/t12/tmp/ch25-udf16082572..., PartitionFilters: [], PushedFilters: [IsNotNull(order_id), LessThan(order_id,100)], ReadSchema: struct<order_id:bigint,customer_id:bigint,amount:bigint>
+
+FILTER udf rows=100 ms=214 tasks=2 failed=0 taskMedianMs=108 taskMaxMs=108 gcMs=0 memorySpill=0 diskSpill=0 shuffleRead=0 shuffleWrite=0
+*(1) Filter if (isnull(order_id#652L)) false else UDF(knownnotnull(order_id#652L))
++- *(1) ColumnarToRow
+   +- FileScan parquet [order_id#652L,customer_id#653L,amount#654L] Batched: true, DataFilters: [if (isnull(order_id#652L)) false else UDF(knownnotnull(order_id#652L))], Format: Parquet, Location: InMemoryFileIndex(1 paths)[file:/C:/Users/VuTT/zero_to_hero_scala/.cache/t12/tmp/ch25-udf16082572..., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<order_id:bigint,customer_id:bigint,amount:bigint>
+
+04:43:40 ERROR Executor: Exception in task 0.0 in stage 82.0 (TID 507)
+java.lang.IllegalStateException: CH25_TRANSIENT_TASK_FAILURE
+	at vn.scalaeng.sparkperf.PerformanceLab$.$anonfun$retry$2(PerformanceLab.scala:107)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2(RDD.scala:869)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2$adapted(RDD.scala:869)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:57)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:57)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:206)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:894)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:897)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+RETRY sum=5050 ms=60 tasks=3 failed=1 taskMedianMs=4 taskMaxMs=4 gcMs=9 memorySpill=0 diskSpill=0 shuffleRead=0 shuffleWrite=0

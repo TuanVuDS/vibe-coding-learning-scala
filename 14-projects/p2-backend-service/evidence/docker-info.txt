@@ -1,0 +1,5 @@
+WARNING: Error loading config file: open C:\Users\VuTT\.docker\config.json: Access is denied.
+
+error during connect: in the default daemon configuration on Windows, the docker client must be run with elevated privileges to connect: Get "http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.51/info": open //./pipe/docker_engine: The system cannot find the file specified.
+
+exit_code=1

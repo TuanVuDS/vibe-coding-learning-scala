@@ -1,0 +1,139 @@
+[
+  {
+    "url": "https://spark.apache.org/docs/4.2.0/api/scala/org/apache/spark/rdd/PairRDDFunctions.html",
+    "status": 200,
+    "sha256": "63913ca8fddb4e944bfe08219c67581aff9036c359a25c266dab4efa20cefd87",
+    "date": "2026-10-17"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/apache/spark/v4.2.0/core/src/main/scala/org/apache/spark/executor/TaskMetrics.scala",
+    "status": 200,
+    "sha256": "1173e027a3b5c60c737ac4a1bff5a3d92c4898e01c87fdafd159ad0973b530eb",
+    "date": "2026-10-17",
+    "relevantLines": [
+      "192: val shuffleReadMetrics: ShuffleReadMetrics = new ShuffleReadMetrics()",
+      "197: val shuffleWriteMetrics: ShuffleWriteMetrics = new ShuffleWriteMetrics()",
+      "222: * Merge values across all temporary [[ShuffleReadMetrics]] into `_shuffleReadMetrics`.",
+      "227: shuffleReadMetrics.setMergeValues(tempShuffleReadMetrics.toSeq)",
+      "250: shuffleRead.REMOTE_BLOCKS_FETCHED -> shuffleReadMetrics._remoteBlocksFetched,",
+      "251: shuffleRead.LOCAL_BLOCKS_FETCHED -> shuffleReadMetrics._localBlocksFetched,",
+      "252: shuffleRead.REMOTE_BYTES_READ -> shuffleReadMetrics._remoteBytesRead,",
+      "253: shuffleRead.REMOTE_BYTES_READ_TO_DISK -> shuffleReadMetrics._remoteBytesReadToDisk,",
+      "254: shuffleRead.LOCAL_BYTES_READ -> shuffleReadMetrics._localBytesRead,",
+      "255: shuffleRead.FETCH_WAIT_TIME -> shuffleReadMetrics._fetchWaitTime,",
+      "256: shuffleRead.RECORDS_READ -> shuffleReadMetrics._recordsRead,",
+      "257: shuffleRead.CORRUPT_MERGED_BLOCK_CHUNKS -> shuffleReadMetrics._corruptMergedBlockChunks,",
+      "258: shuffleRead.MERGED_FETCH_FALLBACK_COUNT -> shuffleReadMetrics._mergedFetchFallbackCount,",
+      "259: shuffleRead.REMOTE_MERGED_BLOCKS_FETCHED -> shuffleReadMetrics._remoteMergedBlocksFetched,",
+      "260: shuffleRead.LOCAL_MERGED_BLOCKS_FETCHED -> shuffleReadMetrics._localMergedBlocksFetched,",
+      "261: shuffleRead.REMOTE_MERGED_CHUNKS_FETCHED -> shuffleReadMetrics._remoteMergedChunksFetched,",
+      "262: shuffleRead.LOCAL_MERGED_CHUNKS_FETCHED -> shuffleReadMetrics._localMergedChunksFetched,",
+      "263: shuffleRead.REMOTE_MERGED_BYTES_READ -> shuffleReadMetrics._remoteMergedBytesRead,",
+      "264: shuffleRead.LOCAL_MERGED_BYTES_READ -> shuffleReadMetrics._localMergedBytesRead,",
+      "265: shuffleRead.REMOTE_REQS_DURATION -> shuffleReadMetrics._remoteReqsDuration,"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/apache/spark/v4.2.0/core/src/main/scala/org/apache/spark/scheduler/DAGScheduler.scala",
+    "status": 200,
+    "sha256": "dce68609ee6d2e4dabb249106861597b07efc9604bdb308b73b053db35d35de8",
+    "date": "2026-10-17",
+    "relevantLines": [
+      "2188: failedStages += stage",
+      "2229: // we can post a task end event before any jobs or stages are updated. The accumulators are",
+      "2395: case FetchFailed(bmAddress, shuffleId, _, mapIndex, reduceId, failureMessage) =>",
+      "2486: failedStages += failedStage",
+      "2487: failedStages += mapStage",
+      "2620: failedStages += failedStage"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/apache/spark/v4.2.0/core/src/main/scala/org/apache/spark/scheduler/AsyncEventQueue.scala",
+    "status": 200,
+    "sha256": "1f0ded8e215951bd11fa584f0dd3384a462f1af426db7862731d15a2d3534ece",
+    "date": "2026-10-17",
+    "relevantLines": [
+      "102: var next: SparkListenerEvent = eventQueue.take()",
+      "111: next = eventQueue.take()",
+      "144: eventQueue.put(POISON_PILL)"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/apache/spark/v4.2.0/core/src/main/scala/org/apache/spark/shuffle/IndexShuffleBlockResolver.scala",
+    "status": 200,
+    "sha256": "d78db5b817ef1188cc360ae2d0721b49a836047d644648bb59dd784c8c5c9099",
+    "date": "2026-10-17",
+    "relevantLines": [
+      "91: def getDataFile(shuffleId: Int, mapId: Long): File = getDataFile(shuffleId, mapId, None)",
+      "116: si => getDataFile(si.shuffleId, si.mapId)",
+      "132: def getDataFile(shuffleId: Int, mapId: Long, dirs: Option[Array[String]]): File = {",
+      "146: def getIndexFile(",
+      "191: var file = getDataFile(shuffleId, mapId)",
+      "196: file = getIndexFile(shuffleId, mapId)",
+      "272: getIndexFile(shuffleId, mapId)",
+      "274: getDataFile(shuffleId, mapId)",
+      "343: val indexFile = getIndexFile(shuffleId, mapId)",
+      "350: val dataFile = getDataFile(shuffleId, mapId)",
+      "397: val indexFile = getIndexFile(shuffleId, mapId)",
+      "411: val dataFile = getDataFile(shuffleId, mapId)",
+      "630: val indexFile = getIndexFile(shuffleId, mapId, dirs)",
+      "654: getDataFile(shuffleId, mapId, dirs),"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/apache/spark/v4.2.0/launcher/src/main/java/org/apache/spark/launcher/JavaModuleOptions.java",
+    "status": 200,
+    "sha256": "a3fe6f55924d020abc68344ea4357bb3f652ced463a0b82ac3ab5af0e99b0f75",
+    "date": "2026-10-17",
+    "relevantLines": [
+      "31: \"--add-opens=java.base/java.lang=ALL-UNNAMED\",",
+      "32: \"--add-opens=java.base/java.lang.invoke=ALL-UNNAMED\",",
+      "33: \"--add-opens=java.base/java.lang.reflect=ALL-UNNAMED\",",
+      "34: \"--add-opens=java.base/java.io=ALL-UNNAMED\",",
+      "35: \"--add-opens=java.base/java.net=ALL-UNNAMED\",",
+      "36: \"--add-opens=java.base/java.nio=ALL-UNNAMED\",",
+      "37: \"--add-opens=java.base/java.util=ALL-UNNAMED\",",
+      "38: \"--add-opens=java.base/java.util.concurrent=ALL-UNNAMED\",",
+      "39: \"--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED\",",
+      "40: \"--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED\",",
+      "41: \"--add-opens=java.base/sun.nio.ch=ALL-UNNAMED\",",
+      "42: \"--add-opens=java.base/sun.nio.cs=ALL-UNNAMED\",",
+      "43: \"--add-opens=java.base/sun.security.action=ALL-UNNAMED\",",
+      "44: \"--add-opens=java.base/sun.util.calendar=ALL-UNNAMED\",",
+      "45: \"--add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED\","
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/apache/spark/v4.2.0/core/src/main/scala/org/apache/spark/rdd/RDD.scala",
+    "status": 200,
+    "sha256": "958724c39412789babab2ac3737de1daef553b8707f1ee980a47c0f3112ccdf2",
+    "date": "2026-10-17",
+    "relevantLines": [
+      "1675: * RDDs will be removed. This function must be called before any job has been"
+    ]
+  },
+  {
+    "url": "https://github.com/globalmentor/hadoop-bare-naked-local-fs",
+    "status": 200,
+    "sha256": "7df0b57eec1b1c373bc18b4f67126e70c807ec27d69c6339cd8fdf19e752a8d6",
+    "date": "2026-10-17"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/apache/spark/v4.2.0/sql/catalyst/src/main/scala/org/apache/spark/sql/internal/SQLConf.scala",
+    "status": 200,
+    "sha256": "cf9a0b19357ce6bc08fab2379d48ecdd82f4082bb62da4ca5c7a156ff93c61ad",
+    "date": "2026-10-17",
+    "relevantLines": [
+      "5576:   val ARTIFACTS_SESSION_ISOLATION_ENABLED =",
+      "5577:     buildConf(\"spark.sql.artifact.isolation.enabled\")",
+      "5578:       .internal()",
+      "5579:       .doc(\"When enabled for a Spark Session, artifacts (such as JARs, files, archives) added to \" +",
+      "5580:         \"this session are isolated from other sessions within the same Spark instance. When \" +",
+      "5581:         \"disabled for a session, artifacts added to this session are visible to other sessions \" +",
+      "5582:         \"that have this config disabled. This config can only be set during the creation of a \" +",
+      "5583:         \"Spark Session and will have no effect when changed in the middle of session usage.\")",
+      "5584:       .version(\"4.0.0\")",
+      "5585:       .booleanConf"
+    ]
+  }
+]

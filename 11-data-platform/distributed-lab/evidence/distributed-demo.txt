@@ -1,0 +1,140 @@
+scala-cli.bat : 15:18:30 WARN Shell: Did not find winutils.exe: java.io.FileNotFoundException: 
+java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see 
+https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+At C:\Users\VuTT\zero_to_hero_scala\11-data-platform\distributed-lab\verify.ps1:22 char:9
++         & scala-cli.bat @ScalaArgs @t19Common *> "$t19Cache/$Label.lo ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (15:18:30 WARN S...WindowsProblems:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+15:18:31 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes 
+where applicable
+ENV spark=4.2.0 scala=2.13.18 java=21.0.12.1 cpu=12 master=local[2,3] heap=8547991552 artifactIsolation=false
+PARTITION hash=Some(org.apache.spark.HashPartitioner@4) mapValues=Some(org.apache.spark.HashPartitioner@4) filter=Some(org.apache.spark.HashPartitioner@4) map=None
+RANGE 0:Some(0)-Some(4):50 1:Some(5)-Some(9):50 2:Some(10)-Some(14):50 3:Some(15)-Some(19):50
+JOIN lostPartitioner=false rows=2000 ms=215 stages=1 attempts=4 failed=0 read=0 remote=0 write=0 records=0 blocks=0 fetchWaitMs=0 spillMem=0 spillDisk=0 locality=PROCESS_LOCAL
+JOIN lostPartitioner=true rows=2000 ms=123 stages=2 attempts=8 failed=0 read=868 remote=0 write=868 records=2000 blocks=4 fetchWaitMs=0 spillMem=0 spillDisk=0 locality=PROCESS_LOCAL
+BUCKET rows=200 ms=1332 stages=1 attempts=4 failed=0 read=0 remote=0 write=0 records=0 blocks=0 fetchWaitMs=0 spillMem=0 spillDisk=0 locality=PROCESS_LOCAL
+*(3) Project [customer_id#6L, order_id#5L]
++- *(3) SortMergeJoin [customer_id#6L], [customer_id#7L], Inner
+   :- *(1) Sort [customer_id#6L ASC NULLS FIRST], false, 0
+   :  +- *(1) Filter isnotnull(customer_id#6L)
+   :     +- *(1) ColumnarToRow
+   :        +- FileScan parquet spark_catalog.default.ch32_orders_7df47e72c820463f91634cd8a4f845eb[order_id#5L,customer_id#6L] Batched: true, Bucketed: true, DataFilters: [isnotnull(customer_id#6L)], Format: Parquet, Location: InMemoryFileIndex(1 paths)[file:/C:/Users/VuTT/zero_to_hero_scala/.cache/t19/tmp/ch32-buckets1352..., PartitionFilters: [], PushedFilters: [IsNotNull(customer_id)], ReadSchema: struct<order_id:bigint,customer_id:bigint>, SelectedBucketsCount: 4 out of 4
+   +- *(2) Sort [customer_id#7L ASC NULLS FIRST], false, 0
+      +- *(2) Filter isnotnull(customer_id#7L)
+         +- *(2) ColumnarToRow
+            +- FileScan parquet spark_catalog.default.ch32_customers_7df47e72c820463f91634cd8a4f845eb[customer_id#7L] Batched: true, Bucketed: true, DataFilters: [isnotnull(customer_id#7L)], Format: Parquet, Location: InMemoryFileIndex(1 paths)[file:/C:/Users/VuTT/zero_to_hero_scala/.cache/t19/tmp/ch32-buckets1352..., PartitionFilters: [], PushedFilters: [IsNotNull(customer_id)], ReadSchema: struct<customer_id:bigint>, SelectedBucketsCount: 4 out of 4
+
+BUCKET_PATH rows=200 ms=601 stages=3 attempts=8 failed=0 read=2286 remote=0 write=2286 records=220 blocks=9 fetchWaitMs=0 spillMem=0 spillDisk=0 locality=ANY,PROCESS_LOCAL
+*(5) Project [customer_id#21L, order_id#20L]
++- *(5) SortMergeJoin [customer_id#21L], [customer_id#22L], Inner
+   :- *(2) Sort [customer_id#21L ASC NULLS FIRST], false, 0
+   :  +- Exchange hashpartitioning(customer_id#21L, 4), ENSURE_REQUIREMENTS, [plan_id=221]
+   :     +- *(1) Filter isnotnull(customer_id#21L)
+   :        +- *(1) ColumnarToRow
+   :           +- FileScan parquet [order_id#20L,customer_id#21L] Batched: true, DataFilters: [isnotnull(customer_id#21L)], Format: Parquet, Location: InMemoryFileIndex(1 paths)[file:/C:/Users/VuTT/zero_to_hero_scala/.cache/t19/tmp/ch32-bucket-path..., PartitionFilters: [], PushedFilters: [IsNotNull(customer_id)], ReadSchema: struct<order_id:bigint,customer_id:bigint>
+   +- *(4) Sort [customer_id#22L ASC NULLS FIRST], false, 0
+      +- Exchange hashpartitioning(customer_id#22L, 4), ENSURE_REQUIREMENTS, [plan_id=230]
+         +- *(3) Filter isnotnull(customer_id#22L)
+            +- *(3) ColumnarToRow
+               +- FileScan parquet [customer_id#22L] Batched: true, DataFilters: [isnotnull(customer_id#22L)], Format: Parquet, Location: InMemoryFileIndex(1 paths)[file:/C:/Users/VuTT/zero_to_hero_scala/.cache/t19/tmp/ch32-bucket-path..., PartitionFilters: [], PushedFilters: [IsNotNull(customer_id)], ReadSchema: struct<customer_id:bigint>
+
+COMBINE ms=265 stages=2 attempts=8 failed=0 read=1264 remote=0 write=1264 records=80 blocks=16 fetchWaitMs=0 spillMem=0 spillDisk=0 locality=ANY,PROCESS_LOCAL
+GROUP ms=334 stages=2 attempts=8 failed=0 read=7608 remote=0 write=7608 records=60000 blocks=16 fetchWaitMs=0 spillMem=0 spillDisk=0 locality=ANY,PROCESS_LOCAL
+HASH_AGG groups=20000 ms=857 stages=2 attempts=8 failed=0 read=418038 remote=0 write=418038 records=80000 blocks=16 fetchWaitMs=0 spillMem=0 spillDisk=0 locality=ANY,PROCESS_LOCAL
+*(2) HashAggregate(keys=[customer_id#31L], functions=[count(1)], output=[customer_id#31L, count#32L])
++- Exchange hashpartitioning(customer_id#31L, 4), ENSURE_REQUIREMENTS, [plan_id=277]
+   +- *(1) HashAggregate(keys=[customer_id#31L], functions=[partial_count(1)], output=[customer_id#31L, count#36L])
+      +- *(1) Project [(id#30L % 20000) AS customer_id#31L]
+         +- *(1) Range (0, 120000, step=1, splits=4)
+
+15:18:57 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior 
+can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+DISTINCT exact=20000 ms=659 stages=3 attempts=9 failed=0 read=412138 remote=0 write=412138 records=80004 blocks=20 fetchWaitMs=0 spillMem=0 spillDisk=0 locality=ANY,PROCESS_LOCAL
+DISTINCT approx=19522 relativeError=0.0239 ms=505 stages=2 attempts=5 failed=0 read=1872 remote=0 write=1872 records=4 blocks=4 fetchWaitMs=0 spillMem=0 spillDisk=0 locality=ANY,PROCESS_LOCAL
+EXACT_PLAN
+*(3) HashAggregate(keys=[], functions=[count(distinct customer_id#31L)], output=[customers#42L])
++- Exchange SinglePartition, ENSURE_REQUIREMENTS, [plan_id=321]
+   +- *(2) HashAggregate(keys=[], functions=[partial_count(distinct customer_id#31L)], output=[count#47L])
+      +- *(2) HashAggregate(keys=[customer_id#31L], functions=[], output=[customer_id#31L])
+         +- Exchange hashpartitioning(customer_id#31L, 4), ENSURE_REQUIREMENTS, [plan_id=316]
+            +- *(1) HashAggregate(keys=[customer_id#31L], functions=[], output=[customer_id#31L])
+               +- *(1) Project [(id#30L % 20000) AS customer_id#31L]
+                  +- *(1) Range (0, 120000, step=1, splits=4)
+
+APPROX_PLAN
+HashAggregate(keys=[], functions=[approx_count_distinct(customer_id#31L, 0.05, 0, 0)], output=[customers#53L])
++- Exchange SinglePartition, ENSURE_REQUIREMENTS, [plan_id=358]
+   +- HashAggregate(keys=[], functions=[partial_approx_count_distinct(customer_id#31L, 0.05, 0, 0)], output=[MS[0]#107L, MS[1]#108L, MS[2]#109L, MS[3]#110L, MS[4]#111L, MS[5]#112L, MS[6]#113L, MS[7]#114L, MS[8]#115L, MS[9]#116L, MS[10]#117L, MS[11]#118L, MS[12]#119L, MS[13]#120L, MS[14]#121L, MS[15]#122L, MS[16]#123L, MS[17]#124L, MS[18]#125L, MS[19]#126L, MS[20]#127L, MS[21]#128L, MS[22]#129L, MS[23]#130L, MS[24]#131L, ... 27 more fields])
+      +- *(1) Project [(id#30L % 20000) AS customer_id#31L]
+         +- *(1) Range (0, 120000, step=1, splits=4)
+
+SERIALIZER java=27653 kryo=20504
+CLOSURE small=649 captured1MiB=1049209
+15:18:57 WARN TaskSetManager: Stage 49 contains a task of very large size (1415 KiB). The maximum recommended task 
+size is 1000 KiB.
+LARGE_TASK count=180000
+CAPTURE_ERROR org.apache.spark.SparkException: Task not serializable
+CAPTURE_ERROR java.io.NotSerializableException: vn.scalaeng.distributed.NonSerializableOwner
+Serialization stack:
+	- object not serializable (class: vn.scalaeng.distributed.NonSerializableOwner, value: vn.scalaeng.distributed.NonSerializableOwner@4cf1ba4e)
+	- element of array (index: 0)
+	- array (class [Ljava.lang.Object;, size 1)
+	- field (class: java.lang.invoke.SerializedLambda, name: capturedArgs, type: class [Ljava.lang.Object;)
+	- object (class java.lang.invoke.SerializedLambda, SerializedLambda[capturingClass=class vn.scalaeng.distributed.NonSerializableOwner, functionalInterfaceMethod=scala/Function1.apply:(Ljava/lang/Object;)Ljava/lang/Object;, implementation=invokeStatic vn/scalaeng/distributed/NonSerializableOwner.$anonfun$broken$1$adapted:(Lvn/scalaeng/distributed/NonSerializableOwner;Ljava/lang/Object;)Ljava/lang/String;, instantiatedMethodType=(Ljava/lang/Object;)Ljava/lang/String;, numCaptured=1])
+	- writeReplace data (class: java.lang.invoke.SerializedLambda)
+	- object (class vn.scalaeng.distributed.NonSerializableOwner$$Lambda/0x000001ed4c48ebe8, vn.scalaeng.distributed.NonSerializableOwner$$Lambda/0x000001ed4c48ebe8@6980c50b)
+CACHE calls=100
+RECOMPUTE calls=200
+CHECKPOINT set=true upstreamDelta=0
+(2) MapPartitionsRDD[126] at map at DistributedDemo.scala:78 []
+ |  ReliableCheckpointRDD[127] at count at DistributedDemo.scala:81 []
+15:18:57 ERROR Executor: Exception in task 0.0 in stage 56.0 (TID 140)
+java.lang.IllegalStateException: CH32_AFTER_EXTERNAL_APPEND
+	at vn.scalaeng.distributed.DistributedLab$.$anonfun$retry$2(DistributedLab.scala:113)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2(RDD.scala:869)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2$adapted(RDD.scala:869)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:57)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:206)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:894)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:897)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+15:18:57 WARN TaskSetManager: Lost task 0.0 in stage 56.0 (TID 140) (nitro-5 executor driver): 
+java.lang.IllegalStateException: CH32_AFTER_EXTERNAL_APPEND
+	at vn.scalaeng.distributed.DistributedLab$.$anonfun$retry$2(DistributedLab.scala:113)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2(RDD.scala:869)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2$adapted(RDD.scala:869)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:57)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:206)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:894)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:86)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:83)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:97)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:897)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+RETRY output=100,200 journal=100,0;100,1;200,0 ms=45 stages=1 attempts=3 failed=1 read=0 remote=0 write=0 records=0 blocks=0 fetchWaitMs=0 spillMem=0 spillDisk=0 locality=PROCESS_LOCAL
+ATTEMPT stage=56 stageAttempt=0 partition=1 taskAttempt=0 failed=false
+ATTEMPT stage=56 stageAttempt=0 partition=0 taskAttempt=0 failed=true
+ATTEMPT stage=56 stageAttempt=0 partition=0 taskAttempt=1 failed=false
+BATCH size=6000 partitions=2 rows=60000 jobs=10 firstMs=32 totalMs=286 checksum=-8654025316253842092
+BATCH size=30000 partitions=2 rows=60000 jobs=2 firstMs=72 totalMs=145 checksum=-8654025316253842092
+BATCH size=6000 partitions=8 rows=60000 jobs=10 firstMs=32 totalMs=429 checksum=-8654025316253842092
+BATCH size=30000 partitions=8 rows=60000 jobs=2 firstMs=84 totalMs=173 checksum=-8654025316253842092
+SHUFFLE_FILES retainedData=4 retainedIndex=4

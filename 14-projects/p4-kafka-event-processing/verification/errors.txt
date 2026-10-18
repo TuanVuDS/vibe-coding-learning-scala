@@ -1,0 +1,15 @@
+COMMAND: C:\Users\VuTT\AppData\Local\Coursier\data\bin\scala-cli.bat run 10-streaming/reliability-lab --server=false --suppress-outdated-dependency-warning --java-opt -Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t15-tmp --main-class vn.scalaeng.reliability.ErrorDemo
+java.lang.IllegalArgumentException: requirement failed: attempts must be in 1..10
+java.lang.IllegalArgumentException: requirement failed: offsets must increase
+java.lang.IllegalArgumentException: requirement failed: invalid window policy
+java.lang.IllegalArgumentException: requirement failed: invalid poll budget
+duplicate JSON fields: Right(Event(1,e1,ORDER,100,5))
+java.lang.IllegalStateException: store already owned
+java.lang.IllegalArgumentException: requirement failed: source identity reused with different payload
+future kind=invalid reason=eventTime in the future maxTime=100
+java.io.IOException: injected DLT failure
+java.lang.IllegalArgumentException: requirement failed: snapshot policy mismatch
+java.lang.IllegalStateException: snapshot byte limit exceeded
+java.lang.IllegalStateException: snapshot corrupt: DecodingFailure at .format: Missing required field
+
+EXIT: 0

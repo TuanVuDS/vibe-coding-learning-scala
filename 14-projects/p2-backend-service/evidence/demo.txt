@@ -1,0 +1,6 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+20 reads, upstream=10ms: uncached calls=20 elapsed_ms=318
+20 reads, upstream=10ms: cached calls=1 elapsed_ms=17
+after invalidation: upstream calls=2
+java.lang.IllegalArgumentException: permits phải dương

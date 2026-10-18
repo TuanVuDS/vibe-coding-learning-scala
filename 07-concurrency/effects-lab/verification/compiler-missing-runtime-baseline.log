@@ -1,0 +1,5 @@
+UTC: 2026-10-16T16:59:05.615523+00:00
+Cwd: C:\Users\VuTT\zero_to_hero_scala\07-concurrency\effects-lab\.cache\compiler-examples\missing-runtime
+Command: scala-cli.bat compile project.scala Example.scala --server=false
+Exit: 0
+

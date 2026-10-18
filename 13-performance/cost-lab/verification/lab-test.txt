@@ -1,0 +1,6 @@
+COMMAND scala-cli.bat test 13-performance/cost-lab --server=false --suppress-outdated-dependency-warning --workspace C:\Users\VuTT\zero_to_hero_scala\.cache\t20\build-lab --java-opt=-Xms128m --java-opt=-Xmx512m --java-opt=-Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t20\tmp --java-opt=-Dfile.encoding=UTF-8
+Test run vn.scalaeng.cost.CostSuite started
+vn.scalaeng.cost.CostSuite: finished 0.494s
+Test run vn.scalaeng.cost.CostSuite finished: 0 failed, 0 ignored, 15 total 0.527s
+
+EXIT 0

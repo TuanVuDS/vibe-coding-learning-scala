@@ -1,0 +1,4 @@
+{"event_id":"K6","customer_id":"C1","campaign":"NEWBIE","ts":"2026-10-15T23:00:00Z"}
+{"event_id":"K7","customer_id":"C2","campaign":"SALE10","ts":"2026-10-16T05:00:00Z"}
+{"event_id":"K8","customer_id":"C9","campaign":"SALE10","ts":"2026-10-16T06:00:00Z"}
+{"event_id":"K9","customer_id":"C3","campaign":"SALE10","ts":"not-a-time"}

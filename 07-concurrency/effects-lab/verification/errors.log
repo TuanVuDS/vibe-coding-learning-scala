@@ -1,0 +1,8 @@
+UTC: 2026-10-16T17:03:54.555787+00:00
+Cwd: C:\Users\VuTT\zero_to_hero_scala
+Command: scala-cli.bat run 07-concurrency/effects-lab --server=false --main-class vn.scalaeng.effects.ErrorDemo
+Exit: 0
+
+java.lang.IllegalArgumentException: unknown sku X
+java.util.concurrent.TimeoutException: 20 milliseconds
+java.lang.IllegalArgumentException: pool size must be positive

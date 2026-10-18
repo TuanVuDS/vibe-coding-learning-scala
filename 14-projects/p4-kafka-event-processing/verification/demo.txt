@@ -1,0 +1,11 @@
+COMMAND: C:\Users\VuTT\AppData\Local\Coursier\data\bin\scala-cli.bat run 10-streaming/streaming-pipeline-lab --server=false --suppress-outdated-dependency-warning --java-opt -Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t15-tmp --main-class vn.scalaeng.pipeline.Demo
+offset=0 kind=accepted reason=-
+offset=1 kind=duplicate reason=-
+offset=2 kind=invalid reason=invalid JSON
+offset=3 kind=conflict reason=event_id conflict
+offset=4 kind=accepted reason=-
+offset=5 kind=late reason=event time below previous watermark
+input=6 receipts=6 commits=6 DLT=3 total=200
+reopen=duplicate total=200
+
+EXIT: 0

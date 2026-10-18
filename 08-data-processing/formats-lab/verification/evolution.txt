@@ -1,0 +1,24 @@
+add-default backward=true forward=true
+  v1->v2 {"id": 7, "label": "paid", "source": "web"}
+  v2->v1 {"id": 7, "label": "paid"}
+add-required backward=false forward=true
+  v1->v2 AvroTypeException: Found vn.scalaeng.formats.evolution.Event, expecting vn.scalaeng.formats.evolution.Event, missing required field source
+  v2->v1 {"id": 7, "label": "paid"}
+remove backward=true forward=false
+  v1->v2 {"id": 7}
+  v2->v1 AvroTypeException: Found vn.scalaeng.formats.evolution.Event, expecting vn.scalaeng.formats.evolution.Event, missing required field label
+int-long backward=true forward=false
+  v1->v2 {"id": 7, "label": "paid"}
+  v2->v1 AvroTypeException: Found long, expecting int
+int-string backward=false forward=false
+  v1->v2 AvroTypeException: Found int, expecting string
+  v2->v1 AvroTypeException: Found string, expecting int
+rename-alias backward=true forward=false
+  v1->v2 {"id": 7, "name": "paid"}
+  v2->v1 AvroTypeException: Found vn.scalaeng.formats.evolution.Event, expecting vn.scalaeng.formats.evolution.Event, missing required field label
+rename-no-alias backward=false forward=false
+  v1->v2 AvroTypeException: Found vn.scalaeng.formats.evolution.Event, expecting vn.scalaeng.formats.evolution.Event, missing required field name
+  v2->v1 AvroTypeException: Found vn.scalaeng.formats.evolution.Event, expecting vn.scalaeng.formats.evolution.Event, missing required field label
+nullable backward=true forward=false
+  v1->v2 {"id": 7, "label": "paid"}
+  v2->v1 AvroTypeException: Found null, expecting string

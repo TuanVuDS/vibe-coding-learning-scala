@@ -1,0 +1,12 @@
+COMMAND scala-cli.bat run 13-performance/cost-lab --server=false --suppress-outdated-dependency-warning --workspace C:\Users\VuTT\zero_to_hero_scala\.cache\t20\build-lab --java-opt=-Xms128m --java-opt=-Xmx512m --java-opt=-Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t20\tmp --java-opt=-Dfile.encoding=UTF-8 --main-class vn.scalaeng.cost.CostBench -- traps C:\Users\VuTT\zero_to_hero_scala\13-performance\cost-lab\verification
+ENV java=21.0.12.1 vendor=Eclipse Adoptium scala=3.9.0 os=Windows 11 arch=amd64 cpu=12 physicalRamBytes=34188873728 heapMaxBytes=536870912
+JVM -Xms128m -Xmx512m -Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t20\tmp -Dfile.encoding=UTF-8 -Dscala.sources=C:/Users/VuTT/zero_to_hero_scala/13-performance/cost-lab/project.scala;C:/Users/VuTT/zero_to_hero_scala/13-performance/cost-lab/src/main/scala/vn/scalaeng/cost/CostBench.scala;C:/Users/VuTT/zero_to_hero_scala/13-performance/cost-lab/src/main/scala/vn/scalaeng/cost/Models.scala;C:/Users/VuTT/zero_to_hero_scala/13-performance/cost-lab/src/main/scala/vn/scalaeng/cost/Orders.scala;C:/Users/VuTT/zero_to_hero_scala/13-performance/cost-lab/src/main/scala/vn/scalaeng/cost/Probes.scala;C:/Users/VuTT/zero_to_hero_scala/13-performance/cost-lab/src/test/scala/vn/scalaeng/cost/CostSuite.scala -Dscala.source.names=project.scala;CostBench.scala;Models.scala;Orders.scala;Probes.scala;CostSuite.scala
+GC G1 Young Generation,G1 Concurrent GC,G1 Old Generation
+METHOD warmup=12 rounds=21 rotated-order=true timing=wall-clock percentiles=nearest-rank pricePerNodeHour=0.12-assumed no-sockets=true
+FIRST discarded-result ms=337.602400 checksum=0
+FIRST consumed-result ms=14.791600 checksum=-462081434382797771
+BENCH discarded-result rounds=21 p50Ms=0.006300 p95Ms=0.010400 p99Ms=0.010400 eventsPerSec=31746031746.031746 costPerMillion=0E-8 mainAllocMedian=0 cpuMedianMs=0.000000 gcCount=0 gcMs=0
+BENCH consumed-result rounds=21 p50Ms=8.487200 p95Ms=9.621000 p99Ms=9.682600 eventsPerSec=23564897.728344 costPerMillion=0.00000141 mainAllocMedian=24 cpuMedianMs=15.625000 gcCount=0 gcMs=0
+SINK -462081434382797771
+
+EXIT 0

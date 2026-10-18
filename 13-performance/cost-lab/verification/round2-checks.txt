@@ -1,0 +1,24 @@
+LESSON PASS: title first; roadmap present; 17 non-empty sections.
+THEORY PASS: 9/9 sections have code + 2-3 output lines; 14 excerpts match lab sources; 21 output lines match transcripts.
+OUTPUT PASS: every text-fence output line in the chapter matches a saved transcript/GC log.
+LINKS PASS: 88 local links resolve.
+SCALA CLI PASS: lab 15 + solutions 7 = 22 pass, 0 fail/ignored, 0 compiler warnings; ModelDemo EXIT 0.
+SOURCES PASS: 6 POM hashes + 9 official documents, 15 HTTP 200; verified 2026-10-17T08:34:33.309928+00:00.
+SNAPSHOTS PASS: 15 raw CSV/benchmark/memory evidence files unchanged in round 2.
+BENCHMARK CODE PASS: timing/model/codec logic and MemoryProbe unchanged; ModelDemo only adds COST_IDLE.
+CPU_COUNTER samples=420 zero=176 minPositiveNs=15625000 gcdPositiveNs=15625000 observedStepMs=15.625
+CHANGED T20 FILES:
+13-performance/ch34-performance-cost.md
+13-performance/cost-lab/analyze.py
+13-performance/cost-lab/verify.py
+13-performance/cost-lab/verify_sources.py
+13-performance/cost-lab/verification/analysis.md
+13-performance/cost-lab/verification/lab-test.txt
+13-performance/cost-lab/verification/model-demo.txt
+13-performance/cost-lab/verification/README.md
+13-performance/cost-lab/verification/round2-checks.txt
+13-performance/cost-lab/verification/solutions-test.txt
+13-performance/cost-lab/verification/sources.json
+13-performance/cost-lab/src/main/scala/vn/scalaeng/cost/Models.scala
+13-performance/cost-lab/src/main/scala/vn/scalaeng/cost/Orders.scala
+13-performance/cost-lab/src/main/scala/vn/scalaeng/cost/Probes.scala

@@ -1,0 +1,18 @@
+COMMAND: C:\Users\VuTT\AppData\Local\Coursier\data\bin\scala-cli.bat run 10-streaming/streaming-lab --main-class vn.scalaeng.streaming.StreamingDemo --server=false --suppress-outdated-dependency-warning
+JDK=21.0.12.1 processors=12
+clocks: event=Vector((Window(0,10),3), (Window(10,20),1), (Window(20,30),1)) processing=Vector((Window(100,110),5))
+c1: event=2 watermark=-3 Accepted closed=Vector()
+c2: event=12 watermark=7 Accepted closed=Vector()
+c3: event=8 watermark=7 Accepted closed=Vector()
+c4: event=21 watermark=16 Accepted closed=Vector(Result(CMP-1,Window(0,10),2,2))
+c5: event=4 watermark=16 Late closed=Vector()
+finish=Vector(Result(CMP-1,Window(10,20),1,1), Result(CMP-1,Window(20,30),1,1)) open=2 seen=1
+sliding(12,20,10)=Vector(Window(10,30), Window(0,20))
+sessions=Vector(Result(U-1,Window(2,19),2,300), Result(U-1,Window(20,30),1,300))
+AtMostOnce: CrashResult(3,Vector(o1, o3))
+AtLeastOnce: CrashResult(3,Vector(o1, o2, o2, o3))
+dedup: CrashResult(3,Vector(o1, o2, o3))
+backpressure=Pressure(2,2,true,55,12)
+java.lang.IllegalArgumentException: requirement failed: invalid window
+
+EXIT: 0

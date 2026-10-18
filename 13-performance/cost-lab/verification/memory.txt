@@ -1,0 +1,5 @@
+COMMAND scala-cli.bat run 13-performance/cost-lab --server=false --suppress-outdated-dependency-warning --workspace C:\Users\VuTT\zero_to_hero_scala\.cache\t20\build-lab --java-opt=-Xms128m --java-opt=-Xmx256m --java-opt=-Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t20\tmp --java-opt=-Dfile.encoding=UTF-8 --main-class vn.scalaeng.cost.MemoryProbe --java-opt=-Xlog:gc*:file=.cache/t20/memory-gc.log:uptime,level,tags
+MEMORY rows=300000 beforeBytes=3778424 heldBytes=80312088 deltaBytes=76533664 bytesPerRow=255.11221333333333 sum=1529850000
+STREAM releasedBytes=3920168 afterGcBytes=3922312 sum=1529850000 heapMaxBytes=268435456
+
+EXIT 0

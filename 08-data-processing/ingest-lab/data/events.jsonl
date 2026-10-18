@@ -1,0 +1,18 @@
+{"event_id":"i1","type":"impression","ts":"2026-10-15T01:00:00Z","user":{"id":"u-1"},"campaign_id":"cmp-1","device":{"os":"Android"},"geo":{"country":"vn","city":"Hà Nội"}}
+{"event_id":"i2","type":"impression","ts":1792029600000,"user":{"id":"U-2"},"campaign_id":" CMP-1 ","geo":{"country":"Viet Nam"}}
+{"event_id":"c1","type":"click","ts":"2026-10-15T08:05:00+07:00","user":{"id":"U-1"},"campaign_id":"CMP-1","impression_id":"i1","geo":{"country":"VN"}}
+{"event_id":"i1","type":"impression","ts":"2026-10-15T01:00:00Z","user":{"id":"u-1"},"campaign_id":"cmp-1","device":{"os":"Android"},"geo":{"country":"vn","city":"Hà Nội"}}
+{"event_id":"c2","type":"click","ts":"2026-10-15T03:10:00Z","user":{"id":"U-3"},"campaign_id":"CMP-2","impression_id":"i3","geo":{"country":"VN"}}
+{"event_id":"i3","type":"impression","ts":"2026-10-15T03:00:00Z","user":{"id":"U-3"},"campaign_id":"CMP-2","geo":{"country":"VN"}}
+{"event_id":"i4","type":"impression","ts":"2026-10-15T17:30:00Z","user":{"id":"U-1"},"campaign_id":"CMP-1","geo":{"country":"VN"}}
+{"event_id":"c3","type":"click","ts":"2026-10-15T05:00:00Z","user":{"id":"U-4"},"campaign_id":"CMP-2","impression_id":"i999","geo":{"country":"VN"}}
+{"event_id":"x1","type":
+{"event_id":"x2","type":"view","ts":"2026-10-15T05:00:00Z","campaign_id":"CMP-1","geo":{"country":"Vietnamm"}}
+{"event_id":"x3","type":"impression","ts":"2026-12-01T00:00:00Z","user":{"id":"U-5"},"campaign_id":"CMP-1","geo":{"country":"VN"}}
+{"event_id":"x4","type":"impression","ts":"2026-10-15T06:00:00Z","user":{"id":"U-5"},"campaign_id":"CMP-9","geo":{"country":"VN"}}
+{"event_id":"c4","type":"click","ts":"2026-10-15T06:30:00Z","user":{"id":"U-2"},"campaign_id":"CMP-2","impression_id":"i2","geo":{"country":"VN"}}
+
+{"event_id":"c5","type":"click","ts":"2026-10-15T06:40:00Z","user":{"id":"U-2"},"campaign_id":"CMP-1","geo":{"country":"VN"}}
+{"event_id":"c6","type":"click","ts":"2026-10-15T07:00:00Z","user":{"id":"U-2"},"campaign_id":"cmp-1","impression_id":"i2","geo":{"country":"VN"}}
+{"event_id":"c6","type":"click","ts":"2026-10-15T07:00:05Z","user":{"id":"U-2"},"campaign_id":"CMP-1","impression_id":"i2","geo":{"country":"VN"}}
+{"event_id":"i5","type":"impression","ts":"2026-10-15T09:00:00Z","user":{"id":"U-6"},"campaign_id":"CMP-2","device":{"os":null},"geo":{"country":"VN","city":null}}

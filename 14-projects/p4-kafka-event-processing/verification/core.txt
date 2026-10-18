@@ -1,0 +1,12 @@
+COMMAND: C:\Users\VuTT\AppData\Local\Coursier\data\bin\scala-cli.bat test 14-projects/p4-kafka-event-processing --server=false --suppress-outdated-dependency-warning --java-opt -Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t15-tmp
+Test run vn.scalaeng.p4.BrokerSuite started
+==> s vn.scalaeng.p4.BrokerSuite.P4 e2e KRaft: producer -> schema/dedup/time/retry -> sink/DLT -> commit/lag skipped 0.038s
+==> s vn.scalaeng.p4.BrokerSuite.missing DLT topic raises real Kafka timeout and prevents source commit skipped 0.003s
+==> s vn.scalaeng.p4.BrokerSuite.real JVM kill on KRaft: commit-before loses; durable-before-commit replays safely skipped 0.003s
+vn.scalaeng.p4.BrokerSuite: finished 0.078s
+Test run vn.scalaeng.p4.BrokerSuite finished: 0 failed, 0 ignored, 3 total 0.094s
+Test run vn.scalaeng.p4.CoreSuite started
+vn.scalaeng.p4.CoreSuite: finished 8.837s
+Test run vn.scalaeng.p4.CoreSuite finished: 0 failed, 0 ignored, 11 total 8.838s
+
+EXIT: 0

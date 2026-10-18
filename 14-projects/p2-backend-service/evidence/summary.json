@@ -1,0 +1,44 @@
+{
+  "tests": {
+    "total": 47,
+    "passed": 29,
+    "failed": 0,
+    "assume_skipped": 18,
+    "compiler_warnings": 0,
+    "suite_summaries": [
+      "Test run vn.scalaeng.p2.app.BootstrapAdminSuite finished: 0 failed, 0 ignored, 4 total 0.186s",
+      "Test run vn.scalaeng.p2.app.ConfigSuite finished: 0 failed, 0 ignored, 1 total 0.008s",
+      "Test run vn.scalaeng.p2.app.PostgresHttpSuite finished: 0 failed, 0 ignored, 1 total 0.008s",
+      "Test run vn.scalaeng.p2.db.PostgresSuite finished: 0 failed, 0 ignored, 13 total 0.041s",
+      "Test run vn.scalaeng.p2.domain.CoreSuite finished: 0 failed, 0 ignored, 5 total 0.036s",
+      "Test run vn.scalaeng.p2.http.ApiSuite finished: 0 failed, 0 ignored, 8 total 6.034s",
+      "Test run vn.scalaeng.p2.http.OperationsSuite finished: 0 failed, 0 ignored, 3 total 1.034s",
+      "Test run vn.scalaeng.p2.security.CryptoSuite finished: 0 failed, 0 ignored, 4 total 0.28s",
+      "Test run vn.scalaeng.p2.security.RateLimiterSuite finished: 0 failed, 0 ignored, 2 total 0.032s",
+      "Test run vn.scalaeng.p2.service.ArchitectureSuite finished: 0 failed, 0 ignored, 1 total 0.053s",
+      "Test run vn.scalaeng.p2.service.ResilienceSuite finished: 0 failed, 0 ignored, 5 total 0.038s"
+    ]
+  },
+  "solutions": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0,
+    "assume_skipped": 0,
+    "compiler_warnings": 0,
+    "suite_summaries": [
+      "Test run vn.scalaeng.solutions.ch18.ExercisesSuite finished: 0 failed, 0 ignored, 6 total 0.132s"
+    ]
+  },
+  "sbt_postgres_round1": {
+    "date": "2026-10-17",
+    "runner": "Claude Code, outside Codex sandbox",
+    "source": ".team\\reviews\\T07-ch18-p2-review.md",
+    "source_sha256": "ffd4c4e19a4281f516dd0aa1779dbed9291da8d64c47248f16eeb2ad6e1d161d",
+    "command": "RUN_DB_TESTS=1 sbt.bat -batch test",
+    "passed": 37,
+    "failed": 0,
+    "db_tests_passed": 13,
+    "exit_code": 0,
+    "scope": "Round 1, before round 2 fixes; not a validation of new DB regression tests"
+  }
+}

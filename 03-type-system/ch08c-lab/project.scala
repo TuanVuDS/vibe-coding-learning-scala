@@ -1,0 +1,5 @@
+//> using scala "3.9.0"
+//> using jvm "21"
+//> using options "-deprecation" "-feature" "-Wunused:all" "-Werror"
+//> using javaOpt "-Dfile.encoding=UTF-8" "-Dstdout.encoding=UTF-8" "-Dstderr.encoding=UTF-8"
+//> using test.dep "org.scalameta::munit:1.2.4"

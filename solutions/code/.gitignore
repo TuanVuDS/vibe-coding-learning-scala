@@ -1,0 +1,7 @@
+target/
+.bsp/
+.scala-build/
+.metals/
+.bloop/
+.idea/
+.vscode/

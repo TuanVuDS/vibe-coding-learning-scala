@@ -1,0 +1,6 @@
+package vn.scalaeng.ch08c.negative
+import scala.quoted.*
+object SameFile:
+  inline def identityLiteral(inline value: String): String = ${ impl('value) }
+  private def impl(value: Expr[String])(using Quotes): Expr[String] = value
+  val topic: String = identityLiteral("orders.created")

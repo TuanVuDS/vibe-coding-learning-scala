@@ -1,0 +1,3 @@
+package vn.scalaeng.ch08c.negative
+import vn.scalaeng.ch08c.TypeTools.Payload
+def broken[A](value: A): Payload[A] = value

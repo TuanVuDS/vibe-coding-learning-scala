@@ -1,0 +1,74 @@
+[
+  {
+    "artifact": "scala3-compiler_3",
+    "version": "3.9.0",
+    "url": "https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.9.0/scala3-compiler_3-3.9.0.pom",
+    "status": 200,
+    "checked": "2026-10-17",
+    "sha256": "fecb28b80fecb35ed4fe2d8c35f9004a3c52c0f9e074a17bcc7776d5401c0b32"
+  },
+  {
+    "artifact": "kafka-clients",
+    "version": "4.4.0",
+    "url": "https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/4.4.0/kafka-clients-4.4.0.pom",
+    "status": 200,
+    "checked": "2026-10-17",
+    "sha256": "498b1e979686631fddda3baba1f19322cb59e4f1664c875c05342ac16d61d016"
+  },
+  {
+    "artifact": "embedded-kafka_3",
+    "version": "4.4.0",
+    "url": "https://repo1.maven.org/maven2/io/github/embeddedkafka/embedded-kafka_3/4.4.0/embedded-kafka_3-4.4.0.pom",
+    "status": 200,
+    "checked": "2026-10-17",
+    "sha256": "2f3075d55a2aec0848ca89d1fa5be23961d05bdef57f20f43df1ff6023476696"
+  },
+  {
+    "artifact": "kafka_2.13",
+    "version": "4.4.0",
+    "url": "https://repo1.maven.org/maven2/org/apache/kafka/kafka_2.13/4.4.0/kafka_2.13-4.4.0.pom",
+    "status": 200,
+    "checked": "2026-10-17",
+    "sha256": "5f62aacbcf1be33a040ca2363e750b0329d698c026d4879b3ed9f7a32d4f27e6"
+  },
+  {
+    "artifact": "circe-parser_3",
+    "version": "0.14.17",
+    "url": "https://repo1.maven.org/maven2/io/circe/circe-parser_3/0.14.17/circe-parser_3-0.14.17.pom",
+    "status": 200,
+    "checked": "2026-10-17",
+    "sha256": "2bd3e8786006f2da5b6fe6b6e1d0f0b88d16335f36f21c2f386ecf3c1fd66324"
+  },
+  {
+    "artifact": "circe-generic_3",
+    "version": "0.14.17",
+    "url": "https://repo1.maven.org/maven2/io/circe/circe-generic_3/0.14.17/circe-generic_3-0.14.17.pom",
+    "status": 200,
+    "checked": "2026-10-17",
+    "sha256": "496ff0257b38efe9ee44bc0e19a45db434f189a0efe96b78ac41a475bae8060a"
+  },
+  {
+    "artifact": "munit_3",
+    "version": "1.2.4",
+    "url": "https://repo1.maven.org/maven2/org/scalameta/munit_3/1.2.4/munit_3-1.2.4.pom",
+    "status": 200,
+    "checked": "2026-10-17",
+    "sha256": "19ee00eb3bfb6228f5addf1a8da3b4e963749fffc379afe0d77f95fb26780dd7"
+  },
+  {
+    "artifact": "slf4j-nop",
+    "version": "2.0.20",
+    "url": "https://repo1.maven.org/maven2/org/slf4j/slf4j-nop/2.0.20/slf4j-nop-2.0.20.pom",
+    "status": 200,
+    "checked": "2026-10-17",
+    "sha256": "3cee6394352190ba1cdde7bf3704532434d5563d5343e4f3016c977acd0162ee"
+  },
+  {
+    "artifact": "sbt",
+    "version": "1.12.11",
+    "url": "https://repo1.maven.org/maven2/org/scala-sbt/sbt/1.12.11/sbt-1.12.11.pom",
+    "status": 200,
+    "checked": "2026-10-17",
+    "sha256": "0625a4b440daf4c75d716b1857d434940df8820dd7099b2d8b16521ac6f13092"
+  }
+]

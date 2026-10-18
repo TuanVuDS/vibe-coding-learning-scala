@@ -1,0 +1,3 @@
+Test run vn.scalaeng.solutions.ch25.Ch25SolutionsSuite started
+vn.scalaeng.solutions.ch25.Ch25SolutionsSuite: finished 46.076s
+Test run vn.scalaeng.solutions.ch25.Ch25SolutionsSuite finished: 0 failed, 0 ignored, 6 total 46.082s

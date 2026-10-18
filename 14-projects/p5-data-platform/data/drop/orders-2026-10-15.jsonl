@@ -1,0 +1,7 @@
+{"event_id":"E1501","order_id":"O1","customer_id":"c1","day":"2026-10-15","status":"PAID","sku":" kb-01 ","quantity":2,"unit_price_vnd":450000,"updated_at":"2026-10-15T01:00:00Z"}
+{"event_id":"E1502","order_id":"O1","customer_id":"C1","day":"2026-10-15","status":"PAID","sku":"MS-01","quantity":1,"unit_price_vnd":250000,"updated_at":"2026-10-15T01:00:00Z"}
+{"event_id":"E1503","order_id":"O2","customer_id":"C2","day":"2026-10-15","status":"paid","sku":"KB-01","quantity":50,"unit_price_vnd":400000,"updated_at":"2026-10-15T02:00:00Z"}
+{"event_id":"E1503","order_id":"O2","customer_id":"C2","day":"2026-10-15","status":"paid","sku":"KB-01","quantity":50,"unit_price_vnd":400000,"updated_at":"2026-10-15T02:00:00Z"}
+{"event_id":"E1504","order_id":"O3","customer_id":"C3","day":"2026-10-15","status":"PAID","sku":"HP-01","quantity":0,"unit_price_vnd":990000,"updated_at":"2026-10-15T03:00:00Z"}
+{"event_id":"E1505","order_id":"O4","customer_id":"C9","day":"2026-10-15","status":"PAID","sku":"KB-01","quantity":1,"unit_price_vnd":450000,"updated_at":"2026-10-15T04:00:00Z"}
+{"event_id":"E1506","order_id":"O5","customer_id":"","day":"2026-13-01","status":"SHIPPED","sku":"","quantity":1,"unit_price_vnd":-5,"updated_at":"not-a-time"}

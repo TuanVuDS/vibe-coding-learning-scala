@@ -1,0 +1,34 @@
+[
+  {
+    "artifact": "spark-sql_2.13",
+    "version": "4.2.0",
+    "source": "https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.13/4.2.0/spark-sql_2.13-4.2.0.pom",
+    "checked": "2026-10-17",
+    "method": "Read Maven Central POM from Coursier cache; artifact used by successful Scala CLI compile/run; fresh HTTP fetch failed",
+    "pomSha256": "634f2f5bad25c1ef6de8bd6960c6eeda55294626eead2d762981e4e3f836e013"
+  },
+  {
+    "artifact": "munit_2.13",
+    "version": "1.2.4",
+    "source": "https://repo1.maven.org/maven2/org/scalameta/munit_2.13/1.2.4/munit_2.13-1.2.4.pom",
+    "checked": "2026-10-17",
+    "method": "Read Maven Central POM from Coursier cache; artifact used by successful Scala CLI compile/run; fresh HTTP fetch failed",
+    "pomSha256": "4bce1eeefcaec44c928fae182b7b9028213f801c2add2b389dfd19b0de2d4fa9"
+  },
+  {
+    "artifact": "hadoop-bare-naked-local-fs",
+    "version": "0.1.0",
+    "source": "https://repo1.maven.org/maven2/com/globalmentor/hadoop-bare-naked-local-fs/0.1.0/hadoop-bare-naked-local-fs-0.1.0.pom",
+    "checked": "2026-10-17",
+    "method": "Read Maven Central POM from Coursier cache; artifact used by successful Scala CLI compile/run; fresh HTTP fetch failed",
+    "pomSha256": "e55682c8b2d337363c45640f6e8cd132365b03c3a6e14b4760e0f297d97c0574"
+  },
+  {
+    "artifact": "scala-library",
+    "version": "2.13.18",
+    "source": "https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.pom",
+    "checked": "2026-10-17",
+    "method": "Read Maven Central POM from Coursier cache; artifact used by successful Scala CLI compile/run; fresh HTTP fetch failed",
+    "pomSha256": "c3fb118214e12399857f4aeaa3033ab8b06f6edbeec9bfe4cb5f0101c034c21d"
+  }
+]

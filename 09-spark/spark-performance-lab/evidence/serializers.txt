@@ -1,0 +1,2 @@
+RDD serializer=Java rows=10000 ms=1927 tasks=8 failed=0 taskMedianMs=276 taskMaxMs=658 gcMs=0 memorySpill=0 diskSpill=0 shuffleRead=75996 shuffleWrite=75996
+RDD serializer=Kryo rows=10000 ms=1734 tasks=8 failed=0 taskMedianMs=247 taskMaxMs=493 gcMs=24 memorySpill=0 diskSpill=0 shuffleRead=72960 shuffleWrite=72960

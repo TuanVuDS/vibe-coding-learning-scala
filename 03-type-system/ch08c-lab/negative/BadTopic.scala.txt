@@ -1,0 +1,3 @@
+package vn.scalaeng.ch08c.negative
+import vn.scalaeng.ch08c.TopicLiteral
+val invalidTopic = TopicLiteral.checked("bad topic")

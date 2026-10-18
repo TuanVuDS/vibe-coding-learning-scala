@@ -1,0 +1,4 @@
+WRONG	{"version":1,"eventId":"e1","orderId":"ORDER","eventTime":100,"amount":100}
+ORDER	\N
+ORDER	{"version":1,"eventId":"far-future","orderId":"ORDER","eventTime":4000000000,"amount":100}
+ORDER	{"version":1,"eventId":"millis","orderId":"ORDER","eventTime":1792022400000,"amount":100}

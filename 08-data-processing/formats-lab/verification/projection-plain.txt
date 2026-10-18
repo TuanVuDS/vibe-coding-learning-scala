@@ -1,0 +1,1 @@
+rows=1000000 amountMinor=50099500000 fullApiBytes=34758415 projectedApiBytes=8007812

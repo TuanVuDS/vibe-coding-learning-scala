@@ -1,0 +1,6 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+Test run vn.scalaeng.solutions.ch18.ExercisesSuite started
+vn.scalaeng.solutions.ch18.ExercisesSuite: finished 0.132s
+Test run vn.scalaeng.solutions.ch18.ExercisesSuite finished: 0 failed, 0 ignored, 6 total 0.132s

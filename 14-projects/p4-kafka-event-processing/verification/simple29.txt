@@ -1,0 +1,6 @@
+COMMAND: C:\Users\VuTT\AppData\Local\Coursier\data\bin\scala-cli.bat run 10-streaming/streaming-pipeline-lab --server=false --suppress-outdated-dependency-warning --java-opt -Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t15-tmp --main-class vn.scalaeng.pipeline.SimpleDemo
+accepted
+duplicate
+100
+
+EXIT: 0

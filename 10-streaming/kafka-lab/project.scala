@@ -1,0 +1,8 @@
+//> using scala "3.9.0"
+//> using jvm "21"
+//> using options "-deprecation" "-feature" "-Wunused:all" "-Werror"
+//> using dep "org.apache.kafka:kafka-clients:4.4.0"
+//> using dep "io.circe::circe-parser:0.14.17"
+//> using dep "org.slf4j:slf4j-nop:2.0.20"
+//> using test.dep "org.scalameta::munit:1.2.4"
+//> using test.dep "io.github.embeddedkafka::embedded-kafka:4.4.0"

@@ -1,0 +1,19 @@
+# CI tối thiểu: kiểm tra format, biên dịch với -Werror (CI=true), chạy test.
+# TRẠNG THÁI: chưa chạy trên GitHub Actions trong môi trường biên soạn.
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: sbt
+      - uses: sbt/setup-sbt@v1
+      - run: sbt scalafmtCheckAll scalafmtSbtCheck test

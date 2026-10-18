@@ -1,0 +1,4 @@
+WARNING: Error loading config file: open C:\Users\VuTT\.docker\config.json: Access is denied.
+WARNING: Error loading config file: open C:\Users\VuTT\.docker\config.json: Access is denied.
+
+exit_code=0

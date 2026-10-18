@@ -1,0 +1,3 @@
+Test run vn.scalaeng.sparkperf.PerformanceSuite started
+vn.scalaeng.sparkperf.PerformanceSuite: finished 39.191s
+Test run vn.scalaeng.sparkperf.PerformanceSuite finished: 0 failed, 0 ignored, 13 total 39.196s

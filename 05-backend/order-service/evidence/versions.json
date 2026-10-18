@@ -1,0 +1,79 @@
+[
+  {
+    "artifact": "org/http4s/http4s-ember-server_3",
+    "version": "0.23.38",
+    "present": true,
+    "source": "https://repo1.maven.org/maven2/org/http4s/http4s-ember-server_3/maven-metadata.xml",
+    "date": "2026-10-17"
+  },
+  {
+    "artifact": "org/http4s/http4s-ember-client_3",
+    "version": "0.23.38",
+    "present": true,
+    "source": "https://repo1.maven.org/maven2/org/http4s/http4s-ember-client_3/maven-metadata.xml",
+    "date": "2026-10-17"
+  },
+  {
+    "artifact": "org/http4s/http4s-dsl_3",
+    "version": "0.23.38",
+    "present": true,
+    "source": "https://repo1.maven.org/maven2/org/http4s/http4s-dsl_3/maven-metadata.xml",
+    "date": "2026-10-17"
+  },
+  {
+    "artifact": "io/circe/circe-core_3",
+    "version": "0.14.17",
+    "present": true,
+    "source": "https://repo1.maven.org/maven2/io/circe/circe-core_3/maven-metadata.xml",
+    "date": "2026-10-17"
+  },
+  {
+    "artifact": "com/softwaremill/sttp/tapir/tapir-http4s-server_3",
+    "version": "1.13.33",
+    "present": true,
+    "source": "https://repo1.maven.org/maven2/com/softwaremill/sttp/tapir/tapir-http4s-server_3/maven-metadata.xml",
+    "date": "2026-10-17"
+  },
+  {
+    "artifact": "com/softwaremill/sttp/tapir/tapir-json-circe_3",
+    "version": "1.13.33",
+    "present": true,
+    "source": "https://repo1.maven.org/maven2/com/softwaremill/sttp/tapir/tapir-json-circe_3/maven-metadata.xml",
+    "date": "2026-10-17"
+  },
+  {
+    "artifact": "com/softwaremill/sttp/tapir/tapir-openapi-docs_3",
+    "version": "1.13.33",
+    "present": true,
+    "source": "https://repo1.maven.org/maven2/com/softwaremill/sttp/tapir/tapir-openapi-docs_3/maven-metadata.xml",
+    "date": "2026-10-17"
+  },
+  {
+    "artifact": "com/softwaremill/sttp/apispec/openapi-circe-yaml_3",
+    "version": "0.11.10",
+    "present": true,
+    "source": "https://repo1.maven.org/maven2/com/softwaremill/sttp/apispec/openapi-circe-yaml_3/maven-metadata.xml",
+    "date": "2026-10-17"
+  },
+  {
+    "artifact": "org/scalameta/munit_3",
+    "version": "1.2.4",
+    "present": true,
+    "source": "https://repo1.maven.org/maven2/org/scalameta/munit_3/maven-metadata.xml",
+    "date": "2026-10-17"
+  },
+  {
+    "artifact": "org/typelevel/munit-cats-effect_3",
+    "version": "2.2.0",
+    "present": true,
+    "source": "https://repo1.maven.org/maven2/org/typelevel/munit-cats-effect_3/maven-metadata.xml",
+    "date": "2026-10-17"
+  },
+  {
+    "artifact": "org/typelevel/cats-effect_3",
+    "version": "3.7.1",
+    "present": true,
+    "source": "https://repo1.maven.org/maven2/org/typelevel/cats-effect_3/maven-metadata.xml",
+    "date": "2026-10-17"
+  }
+]

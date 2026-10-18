@@ -1,0 +1,15 @@
+{
+  "name": "orders",
+  "version": 1,
+  "owner": "team-checkout",
+  "fields": [
+    {"name": "order_id",       "type": "string"},
+    {"name": "customer_id",    "type": "string"},
+    {"name": "day",            "type": "date"},
+    {"name": "status",         "type": "enum", "values": ["PAID", "REFUNDED", "CANCELLED"]},
+    {"name": "sku",            "type": "string"},
+    {"name": "quantity",       "type": "int"},
+    {"name": "unit_price_vnd", "type": "long"},
+    {"name": "updated_at",     "type": "timestamp"}
+  ]
+}

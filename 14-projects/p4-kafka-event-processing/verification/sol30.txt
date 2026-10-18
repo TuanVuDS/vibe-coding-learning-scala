@@ -1,0 +1,6 @@
+COMMAND: C:\Users\VuTT\AppData\Local\Coursier\data\bin\scala-cli.bat test solutions/ch30-code --server=false --suppress-outdated-dependency-warning --java-opt -Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t15-tmp
+Test run vn.scalaeng.solutions.ch30.ExercisesSuite started
+vn.scalaeng.solutions.ch30.ExercisesSuite: finished 0.221s
+Test run vn.scalaeng.solutions.ch30.ExercisesSuite finished: 0 failed, 0 ignored, 6 total 0.244s
+
+EXIT: 0

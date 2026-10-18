@@ -1,0 +1,6 @@
+UTC: 2026-10-16T17:03:03.250284+00:00
+Cwd: C:\Users\VuTT\zero_to_hero_scala
+Command: scala-cli.bat run 07-concurrency/effects-lab --server=false --main-class vn.scalaeng.effects.SimpleExample
+Exit: 0
+
+first=1 second=2

@@ -1,0 +1,14 @@
+<configuration>
+  <!-- Log ra stdout theo dạng một dòng; nền tảng chạy container gom stdout. Chương 9 có ví dụ JSON log tự viết. -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+      <charset>UTF-8</charset>
+    </encoder>
+  </appender>
+  <logger name="org.http4s.server.middleware.Logger" level="INFO"/>
+  <logger name="org.http4s.ember" level="WARN"/>
+  <root level="INFO">
+    <appender-ref ref="STDOUT"/>
+  </root>
+</configuration>

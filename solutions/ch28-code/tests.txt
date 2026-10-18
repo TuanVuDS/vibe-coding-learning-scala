@@ -1,0 +1,6 @@
+COMMAND: C:\Users\VuTT\AppData\Local\Coursier\data\bin\scala-cli.bat test solutions/ch28-code --server=false --suppress-outdated-dependency-warning
+Test run vn.scalaeng.solutions.ch28.ExercisesSuite started
+vn.scalaeng.solutions.ch28.ExercisesSuite: finished 0.119s
+Test run vn.scalaeng.solutions.ch28.ExercisesSuite finished: 0 failed, 0 ignored, 7 total 0.129s
+
+EXIT: 0

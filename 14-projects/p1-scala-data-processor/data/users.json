@@ -1,0 +1,10 @@
+[
+  {"user_id": "U-1", "name": "Nguyễn  Văn An", "email": " An.Nguyen@Example.COM ", "phone": "+84 912 345 678", "city": "TP HCM"},
+  {"user_id": "U-2", "name": "Trần Thị Bình", "email": null, "phone": "0987.654.321", "city": "ha noi"},
+  {"user_id": "U-3", "name": "Lê Chi", "city": "Da Nang"},
+  {"user_id": "U-4", "name": "Phạm Dũng", "email": "dung@@x.vn", "phone": "12345", "city": ""},
+  {"user_id": "U-1", "name": "Nguyễn Văn An (bản cũ)", "city": "Hà Nội"},
+  "U-6",
+  {"user_id": "U-7", "name": 123, "city": "Hà Nội"},
+  {"user_id": "U-8", "name": "Hoàng Phương", "email": "phuong@shop.vn", "phone": "0903-123-456", "city": "  Cần   Thơ "}
+]

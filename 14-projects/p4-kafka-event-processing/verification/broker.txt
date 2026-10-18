@@ -1,0 +1,46 @@
+COMMAND: C:\Users\VuTT\AppData\Local\Coursier\data\bin\scala-cli.bat test 14-projects/p4-kafka-event-processing --server=false --suppress-outdated-dependency-warning --java-opt -Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t15-tmp --test-only *BrokerSuite
+producer line=1 topic=orders offset=0
+producer line=2 topic=orders offset=1
+producer line=3 topic=orders offset=2
+producer line=4 topic=orders offset=3
+producer line=5 topic=orders offset=4
+producer line=6 topic=orders offset=5
+producer line=7 topic=orders offset=6
+producer line=8 topic=orders offset=7
+P4 statuses=accepted,duplicate,invalid,conflict,accepted,late,accepted,exhausted total=300 receipts=8 committed=8 lag=0 retryAttempts=2
+DLT offsets=2,3,5,7 attempts=0,0,0,3 reasons=4
+producer line=1 topic=cli offset=0
+producer line=2 topic=cli offset=1
+producer line=3 topic=cli offset=2
+producer line=4 topic=cli offset=3
+producer line=5 topic=cli offset=4
+producer line=6 topic=cli offset=5
+producer line=7 topic=cli offset=6
+producer line=8 topic=cli offset=7
+producer line=1 topic=cli offset=8
+producer line=2 topic=cli offset=9
+producer line=3 topic=cli offset=10
+producer line=4 topic=cli offset=11
+source=cli:0:0 kind=accepted lag=Some(11) counts=(accepted,1)
+source=cli:0:1 kind=duplicate lag=Some(10) counts=(accepted,1),(duplicate,1)
+source=cli:0:2 kind=invalid lag=Some(9) counts=(accepted,1),(duplicate,1),(invalid,1)
+source=cli:0:3 kind=conflict lag=Some(8) counts=(accepted,1),(conflict,1),(duplicate,1),(invalid,1)
+source=cli:0:4 kind=accepted lag=Some(7) counts=(accepted,2),(conflict,1),(duplicate,1),(invalid,1)
+source=cli:0:5 kind=late lag=Some(6) counts=(accepted,2),(conflict,1),(duplicate,1),(invalid,1),(late,1)
+source=cli:0:6 kind=accepted lag=Some(5) counts=(accepted,3),(conflict,1),(duplicate,1),(invalid,1),(late,1)
+source=cli:0:7 kind=exhausted lag=Some(4) counts=(accepted,3),(conflict,1),(duplicate,1),(exhausted,1),(invalid,1),(late,1)
+source=cli:0:8 kind=invalid lag=Some(3) counts=(accepted,3),(conflict,1),(duplicate,1),(exhausted,1),(invalid,2),(late,1)
+source=cli:0:9 kind=invalid lag=Some(2) counts=(accepted,3),(conflict,1),(duplicate,1),(exhausted,1),(invalid,3),(late,1)
+source=cli:0:10 kind=invalid lag=Some(1) counts=(accepted,3),(conflict,1),(duplicate,1),(exhausted,1),(invalid,4),(late,1)
+source=cli:0:11 kind=invalid lag=Some(0) counts=(accepted,3),(conflict,1),(duplicate,1),(exhausted,1),(invalid,5),(late,1)
+handled=12 stopRequested=false buckets=Vector(Bucket(100,ORDER,100), Bucket(300,ORDER,200))
+CLI fixture receipts=12 DLT=8 futureInvalid=2 maxTime=300 total=300
+DLT publish: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.TimeoutException: Topic missing-dead not present in metadata after 10000 ms.
+DLT timeout receipts=1 committed=None
+kill=before childExit=1 restartOffset=1 total=100 receipts=1 committed=2
+kill=after childExit=1 restartOffset=0 total=100 receipts=1 committed=1
+Test run vn.scalaeng.p4.BrokerSuite started
+vn.scalaeng.p4.BrokerSuite: finished 81.986s
+Test run vn.scalaeng.p4.BrokerSuite finished: 0 failed, 0 ignored, 3 total 82.012s
+
+EXIT: 0

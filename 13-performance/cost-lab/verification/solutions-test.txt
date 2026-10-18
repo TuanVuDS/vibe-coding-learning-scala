@@ -1,0 +1,6 @@
+COMMAND scala-cli.bat test solutions/ch34-code --server=false --suppress-outdated-dependency-warning --workspace C:\Users\VuTT\zero_to_hero_scala\.cache\t20\build-solutions --java-opt=-Xms128m --java-opt=-Xmx512m --java-opt=-Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t20\tmp --java-opt=-Dfile.encoding=UTF-8
+Test run vn.scalaeng.cost.solutions.ExercisesSuite started
+vn.scalaeng.cost.solutions.ExercisesSuite: finished 0.155s
+Test run vn.scalaeng.cost.solutions.ExercisesSuite finished: 0 failed, 0 ignored, 7 total 0.18s
+
+EXIT 0

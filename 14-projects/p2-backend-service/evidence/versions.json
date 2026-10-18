@@ -1,0 +1,185 @@
+{
+  "verified_at": "2026-10-16T21:25:01.835188+00:00",
+  "releases": [
+    {
+      "coordinate": "org.typelevel:cats-effect_3:3.7.1",
+      "url": "https://repo1.maven.org/maven2/org/typelevel/cats-effect_3/3.7.1/cats-effect_3-3.7.1.pom",
+      "status": 200,
+      "sha256": "eeebb56ea43c9ec0f3a61e9b56ebf69bdbe160285799646c58d5d88a2897d0f9"
+    },
+    {
+      "coordinate": "org.http4s:http4s-ember-server_3:0.23.38",
+      "url": "https://repo1.maven.org/maven2/org/http4s/http4s-ember-server_3/0.23.38/http4s-ember-server_3-0.23.38.pom",
+      "status": 200,
+      "sha256": "5e237df131365329117e0353a987ad5ab600e7548029df7fcca73a8eb5c2a50b"
+    },
+    {
+      "coordinate": "org.http4s:http4s-dsl_3:0.23.38",
+      "url": "https://repo1.maven.org/maven2/org/http4s/http4s-dsl_3/0.23.38/http4s-dsl_3-0.23.38.pom",
+      "status": 200,
+      "sha256": "3d3d3777acc87783f50487511b7bf102303d8facc5d98da478e18292892981bb"
+    },
+    {
+      "coordinate": "io.circe:circe-core_3:0.14.17",
+      "url": "https://repo1.maven.org/maven2/io/circe/circe-core_3/0.14.17/circe-core_3-0.14.17.pom",
+      "status": 200,
+      "sha256": "1123bf229eeb1fccf35b71919114fff8738c838b47cff906e83b5c9abdafddd8"
+    },
+    {
+      "coordinate": "com.softwaremill.sttp.tapir:tapir-http4s-server_3:1.13.33",
+      "url": "https://repo1.maven.org/maven2/com/softwaremill/sttp/tapir/tapir-http4s-server_3/1.13.33/tapir-http4s-server_3-1.13.33.pom",
+      "status": 200,
+      "sha256": "6dc78618b6ff6e2196389ab119c9c83c47801b45d3127cc30d8b4045de0268e5"
+    },
+    {
+      "coordinate": "com.softwaremill.sttp.tapir:tapir-json-circe_3:1.13.33",
+      "url": "https://repo1.maven.org/maven2/com/softwaremill/sttp/tapir/tapir-json-circe_3/1.13.33/tapir-json-circe_3-1.13.33.pom",
+      "status": 200,
+      "sha256": "540c56e87e3c0e39a90f873e3c4d479220c8a79146e4fd795f730e52878728d2"
+    },
+    {
+      "coordinate": "com.softwaremill.sttp.tapir:tapir-openapi-docs_3:1.13.33",
+      "url": "https://repo1.maven.org/maven2/com/softwaremill/sttp/tapir/tapir-openapi-docs_3/1.13.33/tapir-openapi-docs_3-1.13.33.pom",
+      "status": 200,
+      "sha256": "890c40daf3c86ae78aa9620638dff066d30572a70168313d612d8e6552ab0ec0"
+    },
+    {
+      "coordinate": "com.softwaremill.sttp.apispec:openapi-circe-yaml_3:0.11.10",
+      "url": "https://repo1.maven.org/maven2/com/softwaremill/sttp/apispec/openapi-circe-yaml_3/0.11.10/openapi-circe-yaml_3-0.11.10.pom",
+      "status": 200,
+      "sha256": "74e37e5b309a3c2bade6b9757f51b04d0f16bba26e8d083bb6ccbef28d1768e7"
+    },
+    {
+      "coordinate": "org.typelevel:doobie-core_3:1.0.0-RC13",
+      "url": "https://repo1.maven.org/maven2/org/typelevel/doobie-core_3/1.0.0-RC13/doobie-core_3-1.0.0-RC13.pom",
+      "status": 200,
+      "sha256": "7acefe48d3c37598972073e3117d16027ce06dbe2efdb3c7e1aad564e070db6c"
+    },
+    {
+      "coordinate": "org.typelevel:doobie-postgres_3:1.0.0-RC13",
+      "url": "https://repo1.maven.org/maven2/org/typelevel/doobie-postgres_3/1.0.0-RC13/doobie-postgres_3-1.0.0-RC13.pom",
+      "status": 200,
+      "sha256": "3902e2e152d64fd87735fd156472cd2e3a59ff50c0651fae59dfd3f0071b396e"
+    },
+    {
+      "coordinate": "org.typelevel:doobie-hikari_3:1.0.0-RC13",
+      "url": "https://repo1.maven.org/maven2/org/typelevel/doobie-hikari_3/1.0.0-RC13/doobie-hikari_3-1.0.0-RC13.pom",
+      "status": 200,
+      "sha256": "62e163ce7b8c5d14f1d5c4131477ab38cb38c1730d951f9df29f1f8f046fb93a"
+    },
+    {
+      "coordinate": "org.flywaydb:flyway-core:13.10.3",
+      "url": "https://repo1.maven.org/maven2/org/flywaydb/flyway-core/13.10.3/flyway-core-13.10.3.pom",
+      "status": 200,
+      "sha256": "cbdba9c892b80a5673fa9b1c0625368f07f093686965e5a31de3a58355d028ae"
+    },
+    {
+      "coordinate": "org.flywaydb:flyway-database-postgresql:13.10.3",
+      "url": "https://repo1.maven.org/maven2/org/flywaydb/flyway-database-postgresql/13.10.3/flyway-database-postgresql-13.10.3.pom",
+      "status": 200,
+      "sha256": "aaea1221b9c24992d612b5442a2dec940f9f6e903cab7490dd9ff4764607d39b"
+    },
+    {
+      "coordinate": "org.postgresql:postgresql:42.7.14",
+      "url": "https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.14/postgresql-42.7.14.pom",
+      "status": 200,
+      "sha256": "b7e66ccf3088cba04d68ec374da4e981686fafe426e4ca69d6d276427175dc63"
+    },
+    {
+      "coordinate": "com.zaxxer:HikariCP:7.0.2",
+      "url": "https://repo1.maven.org/maven2/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.pom",
+      "status": 200,
+      "sha256": "662a87f80487be89bd77296213e91108ff9f01ed0d9a90f9a4e21263cc49e73e"
+    },
+    {
+      "coordinate": "com.password4j:password4j:1.8.4",
+      "url": "https://repo1.maven.org/maven2/com/password4j/password4j/1.8.4/password4j-1.8.4.pom",
+      "status": 200,
+      "sha256": "025fb888cbea9ec7bbb8abd8defc84ffed20abaeade2ecb4b15ce7f96006d25f"
+    },
+    {
+      "coordinate": "com.github.jwt-scala:jwt-circe_3:11.0.4",
+      "url": "https://repo1.maven.org/maven2/com/github/jwt-scala/jwt-circe_3/11.0.4/jwt-circe_3-11.0.4.pom",
+      "status": 200,
+      "sha256": "67c9c5258f82333b92fc95861ee921f86770e0e228536d7154a46fd7778ed85b"
+    },
+    {
+      "coordinate": "org.typelevel:log4cats-slf4j_3:2.8.0",
+      "url": "https://repo1.maven.org/maven2/org/typelevel/log4cats-slf4j_3/2.8.0/log4cats-slf4j_3-2.8.0.pom",
+      "status": 200,
+      "sha256": "887d99e1afdc66d692520de6697e387c6d55db48bb61b193eee27047fe67b7d1"
+    },
+    {
+      "coordinate": "ch.qos.logback:logback-classic:1.6.5",
+      "url": "https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.6.5/logback-classic-1.6.5.pom",
+      "status": 200,
+      "sha256": "ab5855cfd0c4ede466bd4b44ff95fef0e1abdc0e51a27964f433c6e207a1734e"
+    },
+    {
+      "coordinate": "org.scalameta:munit_3:1.2.4",
+      "url": "https://repo1.maven.org/maven2/org/scalameta/munit_3/1.2.4/munit_3-1.2.4.pom",
+      "status": 200,
+      "sha256": "19ee00eb3bfb6228f5addf1a8da3b4e963749fffc379afe0d77f95fb26780dd7"
+    },
+    {
+      "coordinate": "org.typelevel:munit-cats-effect_3:2.2.0",
+      "url": "https://repo1.maven.org/maven2/org/typelevel/munit-cats-effect_3/2.2.0/munit-cats-effect_3-2.2.0.pom",
+      "status": 200,
+      "sha256": "1631c20e730c506547e77e5300cd7b55fa49bb0d9212b4c860be937d73c7204f"
+    },
+    {
+      "coordinate": "org.typelevel:cats-effect-testkit_3:3.7.1",
+      "url": "https://repo1.maven.org/maven2/org/typelevel/cats-effect-testkit_3/3.7.1/cats-effect-testkit_3-3.7.1.pom",
+      "status": 200,
+      "sha256": "733e38fc73eb9cf680e798eb88498218790ff5df3a172e934cbf0639d9c38102"
+    },
+    {
+      "coordinate": "org.http4s:http4s-ember-client_3:0.23.38",
+      "url": "https://repo1.maven.org/maven2/org/http4s/http4s-ember-client_3/0.23.38/http4s-ember-client_3-0.23.38.pom",
+      "status": 200,
+      "sha256": "cc1625e5a26883b41bea012322de17129b1d4ed6364862af8f189c0778ee2f35"
+    },
+    {
+      "coordinate": "io.zonky.test:embedded-postgres:2.2.2",
+      "url": "https://repo1.maven.org/maven2/io/zonky/test/embedded-postgres/2.2.2/embedded-postgres-2.2.2.pom",
+      "status": 200,
+      "sha256": "ea7da5e34763a338563019cf541e50438f927b52018fa275daddb3101fe375d8"
+    },
+    {
+      "coordinate": "io.zonky.test.postgres:embedded-postgres-binaries-windows-amd64:18.6.0",
+      "url": "https://repo1.maven.org/maven2/io/zonky/test/postgres/embedded-postgres-binaries-windows-amd64/18.6.0/embedded-postgres-binaries-windows-amd64-18.6.0.pom",
+      "status": 200,
+      "sha256": "7f31c1a24ea62a7d2f6814b50800cc1f87995c75bac1be6c527a46f678cbeb83"
+    },
+    {
+      "coordinate": "io.zonky.test.postgres:embedded-postgres-binaries-linux-amd64:18.6.0",
+      "url": "https://repo1.maven.org/maven2/io/zonky/test/postgres/embedded-postgres-binaries-linux-amd64/18.6.0/embedded-postgres-binaries-linux-amd64-18.6.0.pom",
+      "status": 200,
+      "sha256": "fac2f8121ab7ee37daed0b23c232bbb8569c2641079bd55b9ba7fbd6d76c2451"
+    },
+    {
+      "coordinate": "io.zonky.test.postgres:embedded-postgres-binaries-darwin-arm64v8:18.6.0",
+      "url": "https://repo1.maven.org/maven2/io/zonky/test/postgres/embedded-postgres-binaries-darwin-arm64v8/18.6.0/embedded-postgres-binaries-darwin-arm64v8-18.6.0.pom",
+      "status": 200,
+      "sha256": "69bbabd92edd01b8ad0307e7b4ccbbee5468341918b8c9caed9dde60de50b2db"
+    },
+    {
+      "coordinate": "org.scala-lang:scala3-compiler_3:3.9.0",
+      "url": "https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.9.0/scala3-compiler_3-3.9.0.pom",
+      "status": 200,
+      "sha256": "fecb28b80fecb35ed4fe2d8c35f9004a3c52c0f9e074a17bcc7776d5401c0b32"
+    },
+    {
+      "coordinate": "org.scala-sbt:sbt:1.12.11",
+      "url": "https://repo1.maven.org/maven2/org/scala-sbt/sbt/1.12.11/sbt-1.12.11.pom",
+      "status": 200,
+      "sha256": "0625a4b440daf4c75d716b1857d434940df8820dd7099b2d8b16521ac6f13092"
+    },
+    {
+      "coordinate": "com.eed3si9n:sbt-assembly_2.12_1.0:2.3.1",
+      "url": "https://repo1.maven.org/maven2/com/eed3si9n/sbt-assembly_2.12_1.0/2.3.1/sbt-assembly_2.12_1.0-2.3.1.pom",
+      "status": 200,
+      "sha256": "625cca84ba335f690db8fdacdf3cdb7b0ba5b1d646889d5c69dcaf2b4f3e4a71"
+    }
+  ]
+}

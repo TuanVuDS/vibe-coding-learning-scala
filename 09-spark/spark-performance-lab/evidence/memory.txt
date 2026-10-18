@@ -1,0 +1,1 @@
+MEMORY heap=805306368 rows=200000 ms=3096 tasks=4 failed=0 taskMedianMs=1475 taskMaxMs=1480 gcMs=60 memorySpill=40514368 diskSpill=209862 shuffleRead=1037666 shuffleWrite=1037666

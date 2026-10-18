@@ -1,0 +1,8 @@
+﻿Captured: 2026-10-17T01:14:09.0401378+07:00
+CPU: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+Logical processors (environment): 12
+OS reported by .NET: Microsoft Windows NT 10.0.26200.0
+Physical RAM / disk model: not available; CIM access denied in sandbox
+Actual benchmark JVM and max heap: see benchmark.txt
+hadoop-client-api-3.4.2.jar bytes: 19665963
+hadoop-client-runtime-3.4.2.jar bytes: 30502934

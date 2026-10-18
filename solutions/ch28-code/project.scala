@@ -1,0 +1,8 @@
+//> using scala "3.9.0"
+//> using jvm "21"
+//> using options "-deprecation" "-feature" "-Wunused:all" "-Werror"
+//> using file "../../10-streaming/kafka-lab/src/main/scala"
+//> using dep "org.apache.kafka:kafka-clients:4.4.0"
+//> using dep "io.circe::circe-parser:0.14.17"
+//> using dep "org.slf4j:slf4j-nop:2.0.20"
+//> using test.dep "org.scalameta::munit:1.2.4"

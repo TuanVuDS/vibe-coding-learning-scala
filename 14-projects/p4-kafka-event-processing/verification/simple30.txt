@@ -1,0 +1,5 @@
+COMMAND: C:\Users\VuTT\AppData\Local\Coursier\data\bin\scala-cli.bat run 10-streaming/reliability-lab --server=false --suppress-outdated-dependency-warning --java-opt -Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t15-tmp --main-class vn.scalaeng.reliability.SimpleDemo
+Some(1)
+Some(6)
+
+EXIT: 0

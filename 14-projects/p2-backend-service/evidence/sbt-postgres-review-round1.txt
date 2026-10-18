@@ -1,0 +1,6 @@
+vn.scalaeng.p2.db.PostgresSuite: finished 21.928s
+Test run vn.scalaeng.p2.db.PostgresSuite finished: 0 failed, 0 ignored, 12 total 21.951s
+vn.scalaeng.p2.app.PostgresHttpSuite: finished 15.967s
+Test run vn.scalaeng.p2.app.PostgresHttpSuite finished: 0 failed, 0 ignored, 1 total 15.968s
+[info] Passed: Total 5 / 6 / 3 / 9 / 12 / 2   (theo module)  → 37 pass, 0 fail
+[success] Total time: 70 s

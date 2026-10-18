@@ -1,0 +1,18 @@
+COMMAND: C:\Users\VuTT\AppData\Local\Coursier\data\bin\scala-cli.bat test 10-streaming/kafka-lab --test-only *BrokerSuite --server=false --suppress-outdated-dependency-warning --java-opt -Djava.io.tmpdir=C:\Users\VuTT\zero_to_hero_scala\.cache\t13-tmp
+partitions: p0 offsets=0,1,2; p1 offsets=0,1,2
+group before: A=2
+group joined: A=1 B=1 revoked=1
+group left: A=2
+lag: end=3 committed=1 lag=2
+at-most restart: first offset=1 skipped=0
+at-least restart: first offset=0 sink duplicate=true total=100
+pipeline: statuses=processed,processed,dead-letter,dead-letter,dead-letter attempts=3 total=100 committed=5
+DLT: source_offsets=2,3,4 attempts=0,3,1
+partition=0 offset=0
+partition=0 offset=0 processed
+handled=1 totals=Map(ORDER-1 -> 100)
+Test run vn.scalaeng.kafka.BrokerSuite started
+vn.scalaeng.kafka.BrokerSuite: finished 13.45s
+Test run vn.scalaeng.kafka.BrokerSuite finished: 0 failed, 0 ignored, 1 total 13.459s
+
+EXIT: 0

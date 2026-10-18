@@ -1,0 +1,52 @@
+{
+  "tests": {
+    "command": [
+      "C:\\Users\\VuTT\\AppData\\Local\\Coursier\\data\\bin\\scala-cli.bat",
+      "test",
+      "C:\\Users\\VuTT\\zero_to_hero_scala\\14-projects\\p2-backend-service",
+      "--server=false",
+      "--suppress-outdated-dependency-warning"
+    ],
+    "exit_code": 0,
+    "verified_at_utc": "2026-10-16T21:52:53.109083+00:00"
+  },
+  "config-missing": {
+    "command": [
+      "C:\\Users\\VuTT\\AppData\\Local\\Coursier\\data\\bin\\scala-cli.bat",
+      "run",
+      "C:\\Users\\VuTT\\zero_to_hero_scala\\14-projects\\p2-backend-service",
+      "--server=false",
+      "--suppress-outdated-dependency-warning",
+      "--main-class",
+      "vn.scalaeng.p2.app.Main"
+    ],
+    "exit_code": 1
+  },
+  "solutions": {
+    "command": [
+      "C:\\Users\\VuTT\\AppData\\Local\\Coursier\\data\\bin\\scala-cli.bat",
+      "test",
+      "C:\\Users\\VuTT\\zero_to_hero_scala\\solutions\\ch18-code",
+      "--server=false",
+      "--suppress-outdated-dependency-warning"
+    ],
+    "exit_code": 0
+  },
+  "domain-isolated": {
+    "command": [
+      "C:\\Users\\VuTT\\AppData\\Local\\Coursier\\data\\bin\\scala-cli.bat",
+      "compile",
+      "C:\\Users\\VuTT\\zero_to_hero_scala\\14-projects\\p2-backend-service\\domain\\src\\main\\scala",
+      "--server=false",
+      "--scala",
+      "3.9.0",
+      "--jvm",
+      "21",
+      "--scalac-option",
+      "-Wunused:all",
+      "--scalac-option",
+      "-Werror"
+    ],
+    "exit_code": 0
+  }
+}

@@ -1,0 +1,12 @@
+scala-cli.bat : 15:19:13 WARN Shell: Did not find winutils.exe: java.io.FileNotFoundException: 
+java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see 
+https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+At C:\Users\VuTT\zero_to_hero_scala\11-data-platform\distributed-lab\verify.ps1:22 char:9
++         & scala-cli.bat @ScalaArgs @t19Common *> "$t19Cache/$Label.lo ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (15:19:13 WARN S...WindowsProblems:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+15:19:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes 
+where applicable
+FORCED_SPILL rows=50000 ms=3163 stages=3 attempts=12 failed=0 read=402661 remote=0 write=402661 records=50000 blocks=7 fetchWaitMs=0 spillMem=3756672 spillDisk=387454 locality=ANY,PROCESS_LOCAL

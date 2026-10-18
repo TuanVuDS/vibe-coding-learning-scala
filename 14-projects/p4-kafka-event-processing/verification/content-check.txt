@@ -1,0 +1,5 @@
+PASS: 2 chapters x 17 nonempty sections; 6 exercises each; all local links valid.
+PASS: 31 executed tests, 0 failed; broker opt-in 3/3, no skips; default core 3 intentional skips.
+PASS: final logs have no compiler/Scala CLI warnings; runtime excerpts match real logs.
+PASS: chapter Scala snippets match compiled source; both simple examples and measurement ran.
+PASS: 9 exact release POM hashes match versions.json.

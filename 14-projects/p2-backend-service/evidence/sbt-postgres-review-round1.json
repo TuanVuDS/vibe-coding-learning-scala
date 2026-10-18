@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-17",
+  "runner": "Claude Code, outside Codex sandbox",
+  "source": ".team\\reviews\\T07-ch18-p2-review.md",
+  "source_sha256": "ffd4c4e19a4281f516dd0aa1779dbed9291da8d64c47248f16eeb2ad6e1d161d",
+  "command": "RUN_DB_TESTS=1 sbt.bat -batch test",
+  "passed": 37,
+  "failed": 0,
+  "db_tests_passed": 13,
+  "exit_code": 0,
+  "scope": "Round 1, before round 2 fixes; not a validation of new DB regression tests"
+}
